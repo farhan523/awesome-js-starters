@@ -1,10 +1,10 @@
-# npm Hidden Gems
+# Awesome JS Starters
 
 > Discover npm packages you didn't know you needed.
 
 There are thousands of excellent npm packages that most developers never find out about — until they stumble across one on LinkedIn at 2am after hours of frustration. This repository changes that.
 
-**npm-hidden-gems** is a community-curated collection where developers share packages they've personally used, with real-world context, code examples, and screenshots. No fluff, no AI-generated lists — only packages that real people have shipped to production.
+**awesome-js-starters** is a community-curated collection where developers share packages they've personally used, with real-world context, code examples, and screenshots. No fluff, no AI-generated lists — only packages that real people have shipped to production.
 
 ---
 
