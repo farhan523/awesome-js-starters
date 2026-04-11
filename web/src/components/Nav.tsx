@@ -3,6 +3,17 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
+import { ChevronDownIcon, MenuIcon } from "lucide-react";
+
+import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import {
+  Sheet,
+  SheetContent,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const primaryLinks = [
   { href: "/", label: "Search" },
@@ -23,102 +34,88 @@ const moreLinks = [
 
 export default function Nav() {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
       if (menuRef.current && !menuRef.current.contains(e.target as Node)) {
-        setOpen(false);
+        setMoreOpen(false);
       }
     }
     document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
-  useEffect(() => setOpen(false), [pathname]);
+  useEffect(() => {
+    setMoreOpen(false);
+    setMobileOpen(false);
+  }, [pathname]);
 
   const moreActive = moreLinks.some((l) => l.href === pathname);
+  const allLinks = [...primaryLinks, ...moreLinks];
 
   return (
     <nav
-      className="sticky top-0 z-50 w-full"
-      style={{
-        background: "#0f1011",
-        borderBottom: "1px solid rgba(255,255,255,0.05)",
-      }}
+      className="sticky top-0 z-50 w-full border-b border-white/5 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80"
     >
-      <div className="mx-auto max-w-5xl flex items-center justify-between px-4 sm:px-6 h-11">
-        {/* Logo */}
+      <div className="mx-auto flex h-12 w-full max-w-5xl items-center justify-between gap-2 px-3 sm:px-6">
         <Link
           href="/"
-          className="flex items-center gap-2 shrink-0"
-          style={{ fontWeight: 590, fontSize: 14, letterSpacing: "-0.13px", color: "#f7f8f8" }}
+          className="flex min-w-0 shrink items-center gap-2"
         >
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
             <rect width="18" height="18" rx="5" fill="#5e6ad2" />
             <path d="M4 9h10M4 6h7M4 12h5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" />
           </svg>
-          <span>awesome-js-starters</span>
+          <span className="truncate text-sm font-semibold tracking-tight text-foreground">
+            awesome-js-starters
+          </span>
         </Link>
 
-        {/* Links */}
-        <div className="flex items-center gap-0.5">
+        <div className="hidden items-center gap-0.5 lg:flex">
           {primaryLinks.map(({ href, label }) => {
             const active = pathname === href;
             return (
               <Link
                 key={href}
                 href={href}
-                className="rounded-md px-2.5 py-1.5 transition-colors"
-                style={{
-                  fontSize: 13,
-                  fontWeight: 510,
-                  letterSpacing: "-0.13px",
-                  color: active ? "#f7f8f8" : "#8a8f98",
-                  background: active ? "rgba(255,255,255,0.06)" : "transparent",
-                }}
-                onMouseEnter={(e) => {
-                  if (!active) (e.currentTarget as HTMLElement).style.color = "#d0d6e0";
-                }}
-                onMouseLeave={(e) => {
-                  if (!active) (e.currentTarget as HTMLElement).style.color = "#8a8f98";
-                }}
+                className={cn(
+                  "rounded-md px-2.5 py-1.5 text-[13px] font-medium tracking-tight transition-colors",
+                  active
+                    ? "bg-white/6 text-foreground"
+                    : "text-muted-foreground hover:text-secondary-foreground"
+                )}
               >
                 {label}
               </Link>
             );
           })}
 
-          {/* More dropdown */}
           <div className="relative" ref={menuRef}>
             <button
               type="button"
-              onClick={() => setOpen(!open)}
-              className="rounded-md px-2.5 py-1.5 transition-colors flex items-center gap-1"
-              style={{
-                fontSize: 13,
-                fontWeight: 510,
-                letterSpacing: "-0.13px",
-                color: moreActive ? "#f7f8f8" : "#8a8f98",
-                background: moreActive ? "rgba(255,255,255,0.06)" : "transparent",
-              }}
+              onClick={() => setMoreOpen(!moreOpen)}
+              className={cn(
+                "flex items-center gap-1 rounded-md px-2.5 py-1.5 text-[13px] font-medium tracking-tight transition-colors",
+                moreActive
+                  ? "bg-white/6 text-foreground"
+                  : "text-muted-foreground hover:text-secondary-foreground"
+              )}
             >
               More
-              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style={{ opacity: 0.6, transition: "transform 0.15s", transform: open ? "rotate(180deg)" : "none" }}>
-                <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
+              <ChevronDownIcon
+                className={cn(
+                  "size-3 opacity-60 transition-transform",
+                  moreOpen && "rotate-180"
+                )}
+              />
             </button>
 
-            {open && (
+            {moreOpen && (
               <div
-                className="absolute right-0 top-full mt-1.5 w-44 py-1 z-50"
-                style={{
-                  background: "#191a1b",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  borderRadius: 8,
-                  boxShadow: "rgba(0,0,0,0.4) 0px 8px 24px",
-                }}
+                className="absolute top-full right-0 z-50 mt-1.5 w-44 rounded-lg border border-border bg-popover py-1 shadow-lg"
               >
                 {moreLinks.map(({ href, label }) => {
                   const active = pathname === href;
@@ -126,21 +123,12 @@ export default function Nav() {
                     <Link
                       key={href}
                       href={href}
-                      className="block px-3 py-2 transition-colors"
-                      style={{
-                        fontSize: 13,
-                        fontWeight: active ? 510 : 400,
-                        color: active ? "#f7f8f8" : "#8a8f98",
-                        background: active ? "rgba(255,255,255,0.05)" : "transparent",
-                      }}
-                      onMouseEnter={(e) => {
-                        (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.04)";
-                        (e.currentTarget as HTMLElement).style.color = "#d0d6e0";
-                      }}
-                      onMouseLeave={(e) => {
-                        (e.currentTarget as HTMLElement).style.background = active ? "rgba(255,255,255,0.05)" : "transparent";
-                        (e.currentTarget as HTMLElement).style.color = active ? "#f7f8f8" : "#8a8f98";
-                      }}
+                      className={cn(
+                        "block px-3 py-2 text-[13px] transition-colors",
+                        active
+                          ? "bg-white/5 font-medium text-foreground"
+                          : "text-muted-foreground hover:bg-white/4 hover:text-secondary-foreground"
+                      )}
                     >
                       {label}
                     </Link>
@@ -150,23 +138,60 @@ export default function Nav() {
             )}
           </div>
 
-          {/* CTA */}
           <a
             href="https://github.com/farhan523/awesome-js-starters/blob/main/CONTRIBUTING.md"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 rounded-md px-3 py-1.5 transition-colors text-white"
-            style={{
-              fontSize: 13,
-              fontWeight: 510,
-              letterSpacing: "-0.13px",
-              background: "#5e6ad2",
-            }}
-            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "#7170ff"; }}
-            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "#5e6ad2"; }}
+            className="ml-2"
           >
-            Submit
+            <Button className="h-8 rounded-md px-3 text-[13px]"> 
+              Submit
+            </Button>
           </a>
+        </div>
+
+        <div className="lg:hidden">
+          <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+            <SheetTrigger
+              aria-label="Open navigation menu"
+              className="inline-flex size-8 items-center justify-center rounded-md border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50"
+            >
+              <MenuIcon className="size-4" />
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[86vw] max-w-sm">
+              <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
+              <div className="mt-6 space-y-2">
+                {allLinks.map(({ href, label }) => {
+                  const active = pathname === href
+                  return (
+                    <Link
+                      key={href}
+                      href={href}
+                      className={cn(
+                        "block rounded-md px-3 py-2 text-sm transition-colors",
+                        active
+                          ? "bg-white/6 font-medium text-foreground"
+                          : "text-secondary-foreground hover:bg-white/4 hover:text-foreground"
+                      )}
+                    >
+                      {label}
+                    </Link>
+                  )
+                })}
+              </div>
+              <Separator className="my-2" />
+              <a
+                href="https://github.com/farhan523/awesome-js-starters/blob/main/CONTRIBUTING.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto"
+              >
+                <Button className="h-9 w-full rounded-md text-sm">
+                  Submit
+                </Button>
+              </a>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </nav>
