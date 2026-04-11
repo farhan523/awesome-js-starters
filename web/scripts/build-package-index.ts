@@ -12,6 +12,7 @@ interface Package {
   github: string;
   docs: string;
   repoPath: string;
+  submittedBy?: string;
   weeklyDownloads?: number;
   githubStars?: number;
   lastUpdated?: string;
@@ -57,6 +58,19 @@ function parseReadme(content: string, category: string, packageName: string): Pa
   const github = extractField(lines, "**GitHub:**");
   const docs = extractField(lines, "**Docs:**");
 
+  // Submitted by: look for [@handle](url) after "## Submitted by"
+  let submittedBy: string | undefined;
+  const submittedIdx = lines.findIndex((l) => l.trim() === "## Submitted by");
+  if (submittedIdx !== -1) {
+    for (let i = submittedIdx + 1; i < lines.length; i++) {
+      const match = lines[i].match(/@([\w-]+)/);
+      if (match && !lines[i].trim().startsWith("<!--")) {
+        submittedBy = match[1];
+        break;
+      }
+    }
+  }
+
   if (!description) {
     console.warn(`[warn] No description found for ${category}/${packageName}`);
   }
@@ -69,6 +83,7 @@ function parseReadme(content: string, category: string, packageName: string): Pa
     github,
     docs,
     repoPath: `packages/${category}/${packageName}`,
+    submittedBy,
   };
 }
 

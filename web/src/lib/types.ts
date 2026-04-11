@@ -6,6 +6,7 @@ export interface Package {
   github: string;
   docs: string;
   repoPath: string;
+  submittedBy?: string;
   weeklyDownloads?: number;
   githubStars?: number;
   lastUpdated?: string;
