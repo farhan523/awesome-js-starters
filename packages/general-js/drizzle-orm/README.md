@@ -2,8 +2,8 @@
 
 > A tool that helps you talk to your database using JavaScript in a way that feels natural and stays very fast.
 
-**npm:** https://www.npmjs.com/package/drizzle-orm
-**GitHub:** https://github.com/drizzle-team/drizzle-orm
+**npm:** https://www.npmjs.com/package/drizzle-orm  
+**GitHub:** https://github.com/drizzle-team/drizzle-orm  
 **Docs:** https://orm.drizzle.team/
 
 ---

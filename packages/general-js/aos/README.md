@@ -2,8 +2,8 @@
 
 > An easy-to-use library that makes elements fade, slide, or zoom into view as the user scrolls down your page.
 
-**npm:** https://www.npmjs.com/package/aos
-**GitHub:** https://github.com/michalsnik/aos
+**npm:** https://www.npmjs.com/package/aos  
+**GitHub:** https://github.com/michalsnik/aos  
 **Docs:** https://michalsnik.github.io/aos/
 
 ---

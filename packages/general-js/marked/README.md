@@ -2,8 +2,8 @@
 
 > A high-speed tool that takes text written in Markdown and instantly converts it into proper HTML for your website.
 
-**npm:** https://www.npmjs.com/package/marked
-**GitHub:** https://github.com/markedjs/marked
+**npm:** https://www.npmjs.com/package/marked  
+**GitHub:** https://github.com/markedjs/marked  
 **Docs:** https://marked.js.org/
 
 ---

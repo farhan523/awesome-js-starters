@@ -2,8 +2,8 @@
 
 > A "fuzzy search" tool that helps users find what they are looking for even if they make a typo or spell a word wrong.
 
-**npm:** https://www.npmjs.com/package/fuse.js
-**GitHub:** https://github.com/krisk/Fuse
+**npm:** https://www.npmjs.com/package/fuse.js  
+**GitHub:** https://github.com/krisk/Fuse  
 **Docs:** https://www.fusejs.io/
 
 ---
