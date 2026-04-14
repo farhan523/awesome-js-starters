@@ -86,4 +86,4 @@ await app.listen({ port: 3000 });
 
 ## Submitted by
 
-[@anthropics](https://github.com/anthropics)
+[@claude](https://github.com/claude)

@@ -95,4 +95,4 @@ const env = EnvSchema.parse(process.env);
 
 ## Submitted by
 
-[@anthropics](https://github.com/anthropics)
+[@claude](https://github.com/claude)

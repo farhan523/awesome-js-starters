@@ -99,4 +99,4 @@ export function UserProfile({ userId }: { userId: string }) {
 
 ## Submitted by
 
-[@anthropics](https://github.com/anthropics)
+[@claude](https://github.com/claude)

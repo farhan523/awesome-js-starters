@@ -79,4 +79,4 @@ Helmet sets headers including:
 
 ## Submitted by
 
-[@anthropics](https://github.com/anthropics)
+[@claude](https://github.com/claude)

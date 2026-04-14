@@ -93,4 +93,4 @@ function addToCart() {
 
 ## Submitted by
 
-[@anthropics](https://github.com/anthropics)
+[@claude](https://github.com/claude)
