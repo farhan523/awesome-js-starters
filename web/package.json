@@ -6,7 +6,9 @@
     "prebuild": "npx tsx scripts/build-package-index.ts",
     "build": "next build",
     "dev": "npx tsx scripts/build-package-index.ts && next dev",
-    "start": "next start"
+    "start": "next start",
+    "build-package-index": "npx tsx scripts/build-package-index.ts",
+    "build-package-index:fetch": "npx tsx scripts/build-package-index.ts --fetch-metadata"
   },
   "dependencies": {
     "@ai-sdk/google": "^3.0.57",

@@ -31,16 +31,28 @@ function fmt(n: number | undefined): string {
 }
 
 export default function TrendingStars() {
-  const ranked = packages
+  const withStats = packages
     .filter((p) => p.weeklyDownloads && p.githubStars)
     .map((pkg) => ({
       pkg,
       momentum: (pkg.weeklyDownloads ?? 0) / (pkg.githubStars ?? 1),
       freshness: getFreshness(pkg),
+      hasStats: true as const,
     }))
     .sort((a, b) => b.momentum - a.momentum);
 
-  const maxMomentum = ranked[0]?.momentum ?? 1;
+  const withoutStats = packages
+    .filter((p) => !p.weeklyDownloads || !p.githubStars)
+    .map((pkg) => ({
+      pkg,
+      momentum: 0,
+      freshness: getFreshness(pkg),
+      hasStats: false as const,
+    }));
+
+  const ranked = [...withStats, ...withoutStats];
+  const maxMomentum = withStats[0]?.momentum ?? 1;
+  const noLiveData = withStats.length === 0;
 
   return (
     <div className="w-full flex flex-col gap-5">
@@ -52,11 +64,26 @@ export default function TrendingStars() {
         </span>
       </div>
 
+      {/* No-stats banner */}
+      {noLiveData && (
+        <div className="rounded-xl px-4 py-3 flex items-center gap-2"
+          style={{ background: "rgba(249,115,22,0.08)", border: "1px solid rgba(249,115,22,0.2)" }}>
+          <span style={{ fontSize: 13, color: "#fb923c" }}>
+            Live stats not yet fetched — showing all packages. Run{" "}
+            <code style={{ fontFamily: "monospace", background: "rgba(255,255,255,0.06)", padding: "1px 5px", borderRadius: 4 }}>
+              npm run build-package-index:fetch
+            </code>{" "}
+            inside the <code style={{ fontFamily: "monospace", background: "rgba(255,255,255,0.06)", padding: "1px 5px", borderRadius: 4 }}>web/</code>{" "}
+            directory to enable momentum ranking.
+          </span>
+        </div>
+      )}
+
       {/* Cards */}
       <div className="flex flex-col gap-2">
         {ranked.map((item, i) => {
-          const f = FRESHNESS[item.freshness];
-          const barWidth = (item.momentum / maxMomentum) * 100;
+          const f = item.hasStats ? FRESHNESS[item.freshness] : FRESHNESS.stale;
+          const barWidth = item.hasStats ? (item.momentum / maxMomentum) * 100 : 0;
           return (
             <div key={item.pkg.name} className="rounded-xl p-4"
               style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.08)" }}
@@ -71,7 +98,9 @@ export default function TrendingStars() {
                     <span style={{ fontSize: 11, color: "#62666d" }}>{item.pkg.category}</span>
                   </div>
                 </div>
-                <span className="rounded-full px-2.5 py-0.5 shrink-0" style={{ fontSize: 11, fontWeight: 510, background: f.bg, color: f.color }}>{f.label}</span>
+                <span className="rounded-full px-2.5 py-0.5 shrink-0" style={{ fontSize: 11, fontWeight: 510, background: f.bg, color: f.color }}>
+                  {item.hasStats ? f.label : "No stats"}
+                </span>
               </div>
 
               {/* Momentum bar */}
@@ -79,7 +108,9 @@ export default function TrendingStars() {
                 <div className="flex-1 h-1.5 rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.06)" }}>
                   <div className="h-full rounded-full transition-all duration-500" style={{ width: `${barWidth}%`, background: f.bar }} />
                 </div>
-                <span className="font-mono w-14 text-right" style={{ fontSize: 11, color: "#62666d" }}>{item.momentum.toFixed(1)}x</span>
+                <span className="font-mono w-14 text-right" style={{ fontSize: 11, color: "#62666d" }}>
+                  {item.hasStats ? `${item.momentum.toFixed(1)}x` : "—"}
+                </span>
               </div>
 
               <div className="flex gap-4" style={{ fontSize: 12, color: "#62666d" }}>
@@ -93,12 +124,6 @@ export default function TrendingStars() {
           );
         })}
       </div>
-
-      {ranked.length === 0 && (
-        <p style={{ fontSize: 13, fontStyle: "italic", color: "#62666d", textAlign: "center", padding: "32px 0" }}>
-          No packages with both download and star data. Run the build with --fetch-metadata.
-        </p>
-      )}
     </div>
   );
 }
