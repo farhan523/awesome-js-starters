@@ -9,7 +9,7 @@ export default function Home() {
         <div className="flex flex-col gap-5">
           <div className="inline-flex w-fit rounded-full px-3 py-1 text-xs border"
             style={{ fontWeight: 510, letterSpacing: "-0.13px", color: "#7170ff", borderColor: "rgba(113,112,255,0.25)", background: "rgba(94,106,210,0.08)" }}>
-            Community-curated · 21 packages
+            Community-curated · 131 packages
           </div>
 
           <h1 style={{ fontSize: "clamp(32px, 5vw, 48px)", fontWeight: 510, lineHeight: 1.05, letterSpacing: "-1.056px", color: "#f7f8f8" }}>
