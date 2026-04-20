@@ -5,6 +5,7 @@ import type { Package } from "@/lib/types";
 import { getGroqKey } from "@/lib/groq-key";
 import ApiKeyManager from "./ApiKeyManager";
 import packagesData from "@/data/packages.json";
+import { fmt } from "@/lib/utils";
 
 const packages = packagesData as Package[];
 const packageNames = packages.map((p) => p.name).sort();
@@ -16,13 +17,6 @@ interface Comparison {
   pickA: string; pickB: string; verdict: string;
 }
 interface CompareResult { packageA: Package; packageB: Package; comparison: Comparison; }
-
-function fmt(n: number | undefined): string {
-  if (n == null) return "-";
-  if (n >= 1000000) return `${(n / 1000000).toFixed(1)}M`;
-  if (n >= 1000) return `${(n / 1000).toFixed(1)}k`;
-  return String(n);
-}
 
 function PackageColumn({ pkg, side, strengths, weaknesses }: { pkg: Package; side: "A" | "B"; strengths: string[]; weaknesses: string[] }) {
   const accent = side === "A" ? "#60a5fa" : "#34d399";

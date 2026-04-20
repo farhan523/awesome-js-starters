@@ -2,33 +2,11 @@
 
 import type { Package } from "@/lib/types";
 import packagesData from "@/data/packages.json";
+import { fmt, getFreshness } from "@/lib/utils";
 
 const packages = packagesData as Package[];
 
-type Freshness = "hot" | "warm" | "stable" | "stale";
-
-const FRESHNESS: Record<Freshness, { label: string; bg: string; color: string; bar: string }> = {
-  hot:    { label: "Hot",     bg: "rgba(239,68,68,0.12)",   color: "#f87171", bar: "#ef4444" },
-  warm:   { label: "Active",  bg: "rgba(249,115,22,0.12)",  color: "#fb923c", bar: "#f97316" },
-  stable: { label: "Stable",  bg: "rgba(94,106,210,0.12)",  color: "#818cf8", bar: "#5e6ad2" },
-  stale:  { label: "Dormant", bg: "rgba(255,255,255,0.05)", color: "#62666d", bar: "#3e3e44" },
-};
-
-function getFreshness(pkg: Package): Freshness {
-  if (!pkg.lastUpdated) return "stable";
-  const d = Math.floor((Date.now() - new Date(pkg.lastUpdated).getTime()) / 86400000);
-  if (d <= 7) return "hot";
-  if (d <= 30) return "warm";
-  if (d <= 180) return "stable";
-  return "stale";
-}
-
-function fmt(n: number | undefined): string {
-  if (n == null) return "-";
-  if (n >= 1000000) return `${(n / 1000000).toFixed(1)}M`;
-  if (n >= 1000) return `${(n / 1000).toFixed(1)}k`;
-  return String(n);
-}
+const NO_STATS_STYLE = { label: "Dormant", bg: "rgba(255,255,255,0.05)", color: "#62666d", bar: "#3e3e44" };
 
 export default function TrendingStars() {
   const withStats = packages
@@ -36,7 +14,7 @@ export default function TrendingStars() {
     .map((pkg) => ({
       pkg,
       momentum: (pkg.weeklyDownloads ?? 0) / (pkg.githubStars ?? 1),
-      freshness: getFreshness(pkg),
+      freshness: getFreshness(pkg.lastUpdated),
       hasStats: true as const,
     }))
     .sort((a, b) => b.momentum - a.momentum);
@@ -46,7 +24,7 @@ export default function TrendingStars() {
     .map((pkg) => ({
       pkg,
       momentum: 0,
-      freshness: getFreshness(pkg),
+      freshness: getFreshness(pkg.lastUpdated),
       hasStats: false as const,
     }));
 
@@ -82,7 +60,7 @@ export default function TrendingStars() {
       {/* Cards */}
       <div className="flex flex-col gap-2">
         {ranked.map((item, i) => {
-          const f = item.hasStats ? FRESHNESS[item.freshness] : FRESHNESS.stale;
+          const f = item.hasStats ? item.freshness : NO_STATS_STYLE;
           const barWidth = item.hasStats ? (item.momentum / maxMomentum) * 100 : 0;
           return (
             <div key={item.pkg.name} className="rounded-xl p-4"

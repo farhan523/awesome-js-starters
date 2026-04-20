@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { Package } from "@/lib/types";
 import packagesData from "@/data/packages.json";
+import { fmt } from "@/lib/utils";
 
 const packages = packagesData as Package[];
 
@@ -11,13 +12,6 @@ const CAT_STYLE: Record<string, { bg: string; color: string }> = {
   node:         { bg: "rgba(34,197,94,0.12)",   color: "#4ade80" },
   "general-js": { bg: "rgba(234,179,8,0.12)",   color: "#facc15" },
 };
-
-function fmt(n: number | undefined, suffix = ""): string {
-  if (n == null) return "";
-  if (n >= 1000000) return `${(n / 1000000).toFixed(1)}M${suffix}`;
-  if (n >= 1000) return `${(n / 1000).toFixed(1)}k${suffix}`;
-  return `${n}${suffix}`;
-}
 
 export default function DiscoverRandom() {
   const [pkg, setPkg] = useState<Package | null>(null);

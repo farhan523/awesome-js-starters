@@ -1,4 +1,5 @@
 import type { EnrichedResult } from "@/lib/types";
+import { fmt, formatBytes, getFreshness } from "@/lib/utils";
 
 const CATEGORY_COLORS: Record<string, { bg: string; color: string }> = {
   react:        { bg: "rgba(59,130,246,0.12)",  color: "#60a5fa" },
@@ -69,21 +70,34 @@ export default function ResultCard({ result }: Props) {
       )}
 
       {/* Stats */}
-      {(result.githubStars != null || result.weeklyDownloads != null || result.lastUpdated) && (
-        <div className="flex items-center gap-3">
+      {(result.githubStars != null || result.weeklyDownloads != null || result.lastUpdated || result.hasTypes || result.bundleSize) && (
+        <div className="flex items-center flex-wrap gap-2.5">
           {result.githubStars != null && (
-            <StatPill>
-              ★{" "}{result.githubStars >= 1000 ? `${(result.githubStars / 1000).toFixed(1)}k` : result.githubStars}
-            </StatPill>
+            <StatPill>★ {fmt(result.githubStars)}</StatPill>
           )}
           {result.weeklyDownloads != null && (
-            <StatPill>
-              ↓{" "}{result.weeklyDownloads >= 1000000
-                ? `${(result.weeklyDownloads / 1000000).toFixed(1)}M/wk`
-                : result.weeklyDownloads >= 1000
-                  ? `${(result.weeklyDownloads / 1000).toFixed(1)}k/wk`
-                  : `${result.weeklyDownloads}/wk`}
-            </StatPill>
+            <StatPill>↓ {fmt(result.weeklyDownloads, "/wk")}</StatPill>
+          )}
+          {result.lastUpdated && (() => {
+            const f = getFreshness(result.lastUpdated);
+            return (
+              <span
+                className="rounded-full px-2 py-0.5"
+                style={{ fontSize: 10, fontWeight: 510, background: f.bg, color: f.color, letterSpacing: "-0.1px" }}
+              >
+                {f.label}
+              </span>
+            );
+          })()}
+          {result.hasTypes === true && (
+            <span
+              style={{ fontSize: 10, fontWeight: 600, color: "#60a5fa", background: "rgba(59,130,246,0.12)", padding: "1px 6px", borderRadius: 4, letterSpacing: "0.2px" }}
+            >
+              TS
+            </span>
+          )}
+          {result.bundleSize && (
+            <StatPill>{formatBytes(result.bundleSize.gzip)} gz</StatPill>
           )}
           {result.lastUpdated && (
             <StatPill>

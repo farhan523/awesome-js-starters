@@ -10,6 +10,8 @@ export interface Package {
   weeklyDownloads?: number;
   githubStars?: number;
   lastUpdated?: string;
+  hasTypes?: boolean;
+  bundleSize?: { gzip: number; raw: number };
 }
 
 export interface SearchResult {

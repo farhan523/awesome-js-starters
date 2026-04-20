@@ -16,6 +16,8 @@ interface Package {
   weeklyDownloads?: number;
   githubStars?: number;
   lastUpdated?: string;
+  hasTypes?: boolean;
+  bundleSize?: { gzip: number; raw: number };
 }
 
 const packagesDir = path.resolve(__dirname, "../../packages");
@@ -154,9 +156,46 @@ function extractGitHubRepo(githubUrl: string): string {
   return match ? match[1] : "";
 }
 
-async function fetchMetadata(pkg: Package, cache: Record<string, { data: any; ts: number }>): Promise<void> {
+async function fetchNpmTypes(npmName: string): Promise<boolean | undefined> {
+  try {
+    const res = await fetch(`https://registry.npmjs.org/${encodeURIComponent(npmName)}/latest`, {
+      headers: { "User-Agent": "awesome-js-starters-build" },
+    });
+    if (!res.ok) return undefined;
+    const data = await res.json();
+    if (data.types || data.typings) return true;
+    const typesName = npmName.startsWith("@")
+      ? `@types/${npmName.slice(1).replace("/", "__")}`
+      : `@types/${npmName}`;
+    const companion = await fetch(
+      `https://registry.npmjs.org/${encodeURIComponent(typesName)}`,
+      { method: "HEAD", headers: { "User-Agent": "awesome-js-starters-build" } }
+    );
+    return companion.ok;
+  } catch {
+    return undefined;
+  }
+}
+
+async function fetchBundleSize(npmName: string): Promise<{ gzip: number; raw: number } | undefined> {
+  try {
+    const res = await fetch(
+      `https://bundlephobia.com/api/size?package=${encodeURIComponent(npmName)}`,
+      { headers: { "User-Agent": "awesome-js-starters-build" } }
+    );
+    if (!res.ok) return undefined;
+    const data = await res.json();
+    if (typeof data.gzip !== "number") return undefined;
+    return { gzip: data.gzip, raw: data.size };
+  } catch {
+    return undefined;
+  }
+}
+
+async function fetchMetadata(pkg: Package, cache: Record<string, { data: any; ts: number }>): Promise<boolean> {
   const npmName = extractNpmName(pkg.npm);
   const ghRepo = extractGitHubRepo(pkg.github);
+  let hitNetwork = false;
 
   // Fetch npm weekly downloads
   if (npmName) {
@@ -165,6 +204,7 @@ async function fetchMetadata(pkg: Package, cache: Record<string, { data: any; ts
     if (cached && Date.now() - cached.ts < CACHE_TTL) {
       pkg.weeklyDownloads = cached.data;
     } else {
+      hitNetwork = true;
       try {
         const res = await fetch(`https://api.npmjs.org/downloads/point/last-week/${npmName}`);
         if (res.ok) {
@@ -186,6 +226,7 @@ async function fetchMetadata(pkg: Package, cache: Record<string, { data: any; ts
       pkg.githubStars = cached.data.stars;
       pkg.lastUpdated = cached.data.pushed;
     } else {
+      hitNetwork = true;
       try {
         const res = await fetch(`https://api.github.com/repos/${ghRepo}`, {
           headers: { "User-Agent": "awesome-js-starters-build" },
@@ -201,20 +242,89 @@ async function fetchMetadata(pkg: Package, cache: Record<string, { data: any; ts
       }
     }
   }
+
+  // Fetch TypeScript types support
+  if (npmName) {
+    const cacheKey = `npmtypes:${npmName}`;
+    const cached = cache[cacheKey];
+    if (cached && Date.now() - cached.ts < CACHE_TTL) {
+      pkg.hasTypes = cached.data;
+    } else {
+      hitNetwork = true;
+      const has = await fetchNpmTypes(npmName);
+      if (has !== undefined) {
+        pkg.hasTypes = has;
+        cache[cacheKey] = { data: has, ts: Date.now() };
+      }
+    }
+  }
+
+  // Fetch bundle size
+  if (npmName) {
+    const cacheKey = `bundle:${npmName}`;
+    const cached = cache[cacheKey];
+    if (cached && Date.now() - cached.ts < CACHE_TTL) {
+      pkg.bundleSize = cached.data;
+    } else {
+      hitNetwork = true;
+      const size = await fetchBundleSize(npmName);
+      if (size) {
+        pkg.bundleSize = size;
+        cache[cacheKey] = { data: size, ts: Date.now() };
+      }
+    }
+  }
+
+  return hitNetwork;
+}
+
+function applyCache(pkg: Package, cache: Record<string, { data: any; ts: number }>): void {
+  const npmName = extractNpmName(pkg.npm);
+  const ghRepo = extractGitHubRepo(pkg.github);
+
+  if (npmName) {
+    const npm = cache[`npm:${npmName}`];
+    if (npm) pkg.weeklyDownloads = npm.data;
+    const types = cache[`npmtypes:${npmName}`];
+    if (types) pkg.hasTypes = types.data;
+    const bundle = cache[`bundle:${npmName}`];
+    if (bundle) pkg.bundleSize = bundle.data;
+  }
+  if (ghRepo) {
+    const gh = cache[`gh:${ghRepo}`];
+    if (gh) {
+      pkg.githubStars = gh.data.stars;
+      pkg.lastUpdated = gh.data.pushed;
+    }
+  }
 }
 
 async function main() {
   const fetchMeta = process.argv.includes("--fetch-metadata");
   const packages = buildIndex();
+  const cache = loadCache();
 
   if (fetchMeta) {
-    console.log("[build] Fetching live metadata from npm and GitHub...");
-    const cache = loadCache();
-    await Promise.all(packages.map((pkg) => fetchMetadata(pkg, cache)));
+    console.log(`[build] Fetching live metadata for ${packages.length} packages (throttled, ~250ms/pkg on cold cache)...`);
+    const DELAY_MS = 250;
+    for (let i = 0; i < packages.length; i++) {
+      const hitNetwork = await fetchMetadata(packages[i], cache);
+      if (i % 10 === 9) saveCache(cache); // flush periodically in case of crash
+      if (hitNetwork && i < packages.length - 1) {
+        await new Promise((r) => setTimeout(r, DELAY_MS));
+      }
+    }
     saveCache(cache);
-    const enriched = packages.filter((p) => p.weeklyDownloads || p.githubStars).length;
-    console.log(`[build] Enriched ${enriched}/${packages.length} packages with metadata`);
+  } else {
+    // No network — apply any cached metadata so dev builds don't lose enrichment
+    for (const pkg of packages) applyCache(pkg, cache);
   }
+
+  const withStars = packages.filter((p) => p.githubStars != null).length;
+  const withDL = packages.filter((p) => p.weeklyDownloads != null).length;
+  const withTypes = packages.filter((p) => p.hasTypes != null).length;
+  const withBundle = packages.filter((p) => p.bundleSize != null).length;
+  console.log(`[build] Metadata: ${withStars} stars, ${withDL} downloads, ${withTypes} types, ${withBundle} bundle (of ${packages.length})`);
 
   fs.mkdirSync(path.dirname(outputFile), { recursive: true });
   fs.writeFileSync(outputFile, JSON.stringify(packages, null, 2));

@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npx tsx scripts/build-package-index.ts",
     "build": "next build",
     "dev": "npx tsx scripts/build-package-index.ts && next dev",
     "start": "next start",

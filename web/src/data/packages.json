@@ -1,0 +1,2268 @@
+[
+  {
+    "name": "@angular/cdk",
+    "description": "Angular Component Dev Kit — a set of behavior primitives for building accessible, high-quality UI components without prescribing any visual style.",
+    "category": "angular",
+    "npm": "https://www.npmjs.com/package/@angular/cdk",
+    "github": "https://github.com/angular/components",
+    "docs": "https://material.angular.io/cdk/categories",
+    "repoPath": "packages/angular/angular-cdk",
+    "submittedBy": "claude",
+    "weeklyDownloads": 3552201,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 206,
+      "raw": 241
+    },
+    "githubStars": 25009,
+    "lastUpdated": "2026-04-18T07:42:57Z"
+  },
+  {
+    "name": "@angular/material",
+    "description": "Official Material Design component library for Angular — 30+ accessible, themeable UI components built for Angular's ecosystem.",
+    "category": "angular",
+    "npm": "https://www.npmjs.com/package/@angular/material",
+    "github": "https://github.com/angular/components",
+    "docs": "https://material.angular.io/",
+    "repoPath": "packages/angular/angular-material",
+    "submittedBy": "claude",
+    "weeklyDownloads": 2313902,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 203,
+      "raw": 232
+    },
+    "githubStars": 25009,
+    "lastUpdated": "2026-04-18T07:42:57Z"
+  },
+  {
+    "name": "@ng-bootstrap/ng-bootstrap",
+    "description": "Angular widgets built from scratch using Bootstrap CSS — no jQuery, no Popper.js, just pure Angular components.",
+    "category": "angular",
+    "npm": "https://www.npmjs.com/package/@ng-bootstrap/ng-bootstrap",
+    "github": "https://github.com/ng-bootstrap/ng-bootstrap",
+    "docs": "https://ng-bootstrap.github.io/",
+    "repoPath": "packages/angular/ng-bootstrap",
+    "submittedBy": "claude",
+    "weeklyDownloads": 688045,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 54535,
+      "raw": 287457
+    },
+    "githubStars": 8239,
+    "lastUpdated": "2025-12-18T12:51:19Z"
+  },
+  {
+    "name": "ng-zorro-antd",
+    "description": "Enterprise-grade UI component library for Angular based on Ant Design — 60+ production-ready components with a polished design system.",
+    "category": "angular",
+    "npm": "https://www.npmjs.com/package/ng-zorro-antd",
+    "github": "https://github.com/NG-ZORRO/ng-zorro-antd",
+    "docs": "https://ng.ant.design/",
+    "repoPath": "packages/angular/ng-zorro-antd",
+    "submittedBy": "claude",
+    "weeklyDownloads": 140882,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 138,
+      "raw": 157
+    },
+    "githubStars": 9148,
+    "lastUpdated": "2026-04-16T23:05:54Z"
+  },
+  {
+    "name": "@ngneat/until-destroy",
+    "description": "Automatic RxJS subscription cleanup for Angular components — no more manual unsubscribe logic in ngOnDestroy.",
+    "category": "angular",
+    "npm": "https://www.npmjs.com/package/@ngneat/until-destroy",
+    "github": "https://github.com/ngneat/until-destroy",
+    "docs": "https://github.com/ngneat/until-destroy",
+    "repoPath": "packages/angular/ngneat-until-destroy",
+    "submittedBy": "claude",
+    "weeklyDownloads": 244666,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 1525,
+      "raw": 3535
+    },
+    "githubStars": 1745,
+    "lastUpdated": "2024-03-21T22:15:18Z"
+  },
+  {
+    "name": "@ngrx/store",
+    "description": "Reactive state management for Angular apps built on RxJS — a predictable, unidirectional data flow inspired by Redux.",
+    "category": "angular",
+    "npm": "https://www.npmjs.com/package/@ngrx/store",
+    "github": "https://github.com/ngrx/platform",
+    "docs": "https://ngrx.io/guide/store",
+    "repoPath": "packages/angular/ngrx-store",
+    "submittedBy": "claude",
+    "weeklyDownloads": 973125,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 5958,
+      "raw": 20415
+    },
+    "githubStars": 8313,
+    "lastUpdated": "2026-04-19T17:33:31Z"
+  },
+  {
+    "name": "@swimlane/ngx-charts",
+    "description": "Declarative, D3-powered charting library for Angular — SVG charts as Angular components with animations and responsive support.",
+    "category": "angular",
+    "npm": "https://www.npmjs.com/package/@swimlane/ngx-charts",
+    "github": "https://github.com/swimlane/ngx-charts",
+    "docs": "https://swimlane.gitbook.io/ngx-charts/",
+    "repoPath": "packages/angular/ngx-charts",
+    "submittedBy": "claude",
+    "weeklyDownloads": 196392,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 111693,
+      "raw": 800491
+    },
+    "githubStars": 4352,
+    "lastUpdated": "2025-10-27T18:55:49Z"
+  },
+  {
+    "name": "ngx-progressbar",
+    "description": "Slim progress bar for Angular — shows a loading indicator at the top of the page, inspired by YouTube and GitHub.",
+    "category": "angular",
+    "npm": "https://www.npmjs.com/package/ngx-progressbar",
+    "github": "https://github.com/MurhafSousli/ngx-progressbar",
+    "docs": "https://murhafsousli.github.io/ngx-progressbar/",
+    "repoPath": "packages/angular/ngx-progressbar",
+    "submittedBy": "claude",
+    "weeklyDownloads": 29780,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 3090,
+      "raw": 15156
+    },
+    "githubStars": 1053,
+    "lastUpdated": "2026-02-07T12:01:34Z"
+  },
+  {
+    "name": "ngx-spinner",
+    "description": "Highly configurable loading spinner overlay for Angular — 50+ animation types, full-screen or component-level, with service-driven control.",
+    "category": "angular",
+    "npm": "https://www.npmjs.com/package/ngx-spinner",
+    "github": "https://github.com/Napster2210/ngx-spinner",
+    "docs": "https://napster2210.github.io/ngx-spinner/",
+    "repoPath": "packages/angular/ngx-spinner",
+    "submittedBy": "claude",
+    "weeklyDownloads": 151076,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 3044,
+      "raw": 10134
+    },
+    "githubStars": 865,
+    "lastUpdated": "2026-04-16T02:18:29Z"
+  },
+  {
+    "name": "ngx-toastr",
+    "description": "Simple, configurable toast notifications for Angular — show success, error, warning, and info messages with ease.",
+    "category": "angular",
+    "npm": "https://www.npmjs.com/package/ngx-toastr",
+    "github": "https://github.com/scttcper/ngx-toastr",
+    "docs": "https://ngx-toastr.vercel.app/",
+    "repoPath": "packages/angular/ngx-toastr",
+    "submittedBy": "claude",
+    "weeklyDownloads": 626520,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 5012,
+      "raw": 23316
+    },
+    "githubStars": 2588,
+    "lastUpdated": "2026-02-06T17:00:36Z"
+  },
+  {
+    "name": "@ngx-translate/core",
+    "description": "Internationalization (i18n) library for Angular — translate your app using JSON files with runtime language switching and pipe/directive support.",
+    "category": "angular",
+    "npm": "https://www.npmjs.com/package/@ngx-translate/core",
+    "github": "https://github.com/ngx-translate/core",
+    "docs": "https://github.com/ngx-translate/core",
+    "repoPath": "packages/angular/ngx-translate",
+    "submittedBy": "claude",
+    "weeklyDownloads": 1345254,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 4905,
+      "raw": 19330
+    },
+    "githubStars": 4660,
+    "lastUpdated": "2026-04-16T13:20:21Z"
+  },
+  {
+    "name": "@ngxs/store",
+    "description": "State management library for Angular inspired by Redux and CQRS — simpler than NgRx with less boilerplate while maintaining predictability.",
+    "category": "angular",
+    "npm": "https://www.npmjs.com/package/@ngxs/store",
+    "github": "https://github.com/ngxs/store",
+    "docs": "https://www.ngxs.io/",
+    "repoPath": "packages/angular/ngxs-store",
+    "submittedBy": "claude",
+    "weeklyDownloads": 144710,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 10371,
+      "raw": 40745
+    },
+    "githubStars": 3550,
+    "lastUpdated": "2026-04-15T09:14:27Z"
+  },
+  {
+    "name": "compression",
+    "description": "HTTP response compression middleware for Express — gzip/deflate responses to reduce bandwidth and improve load times.",
+    "category": "express",
+    "npm": "https://www.npmjs.com/package/compression",
+    "github": "https://github.com/expressjs/compression",
+    "docs": "https://github.com/expressjs/compression",
+    "repoPath": "packages/express/compression",
+    "submittedBy": "claude",
+    "weeklyDownloads": 31582372,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 29455,
+      "raw": 177887
+    },
+    "githubStars": 2804,
+    "lastUpdated": "2026-03-02T07:30:14Z"
+  },
+  {
+    "name": "cookie-parser",
+    "description": "Cookie parsing middleware for Express — parse Cookie headers into `req.cookies` and support signed cookies for tamper detection.",
+    "category": "express",
+    "npm": "https://www.npmjs.com/package/cookie-parser",
+    "github": "https://github.com/expressjs/cookie-parser",
+    "docs": "https://github.com/expressjs/cookie-parser",
+    "repoPath": "packages/express/cookie-parser",
+    "submittedBy": "claude",
+    "weeklyDownloads": 7777259,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 1772,
+      "raw": 4339
+    },
+    "githubStars": 2028,
+    "lastUpdated": "2026-04-01T22:02:32Z"
+  },
+  {
+    "name": "cors",
+    "description": "CORS middleware for Express — configure cross-origin resource sharing with a single line of code.",
+    "category": "express",
+    "npm": "https://www.npmjs.com/package/cors",
+    "github": "https://github.com/expressjs/cors",
+    "docs": "https://github.com/expressjs/cors",
+    "repoPath": "packages/express/cors",
+    "submittedBy": "claude",
+    "weeklyDownloads": 49751149,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 1861,
+      "raw": 4292
+    },
+    "githubStars": 6198,
+    "lastUpdated": "2026-04-06T21:03:03Z"
+  },
+  {
+    "name": "express-rate-limit",
+    "description": "Basic IP rate-limiting middleware for Express — protect your API endpoints from brute-force and denial-of-service attacks.",
+    "category": "express",
+    "npm": "https://www.npmjs.com/package/express-rate-limit",
+    "github": "https://github.com/express-rate-limit/express-rate-limit",
+    "docs": "https://express-rate-limit.mintlify.app/",
+    "repoPath": "packages/express/express-rate-limit",
+    "submittedBy": "claude",
+    "weeklyDownloads": 35784579,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 10521,
+      "raw": 33956
+    },
+    "githubStars": 3252,
+    "lastUpdated": "2026-04-19T20:04:23Z"
+  },
+  {
+    "name": "express-session",
+    "description": "Session middleware for Express — server-side sessions with configurable storage backends and cookie options.",
+    "category": "express",
+    "npm": "https://www.npmjs.com/package/express-session",
+    "github": "https://github.com/expressjs/session",
+    "docs": "https://github.com/expressjs/session",
+    "repoPath": "packages/express/express-session",
+    "submittedBy": "claude",
+    "weeklyDownloads": 3598044,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 7564,
+      "raw": 21529
+    },
+    "githubStars": 6358,
+    "lastUpdated": "2026-04-02T01:13:20Z"
+  },
+  {
+    "name": "express-validator",
+    "description": "Express middleware for validating and sanitizing request data — chain validators on body, query, params, and headers.",
+    "category": "express",
+    "npm": "https://www.npmjs.com/package/express-validator",
+    "github": "https://github.com/express-validator/express-validator",
+    "docs": "https://express-validator.github.io/docs/",
+    "repoPath": "packages/express/express-validator",
+    "submittedBy": "claude",
+    "weeklyDownloads": 1469465,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 7392,
+      "raw": 27279
+    },
+    "githubStars": 6242,
+    "lastUpdated": "2026-04-15T18:51:11Z"
+  },
+  {
+    "name": "helmet",
+    "description": "Secure Express.js apps by automatically setting HTTP response headers that protect against common web vulnerabilities.",
+    "category": "express",
+    "npm": "https://www.npmjs.com/package/helmet",
+    "github": "https://github.com/helmetjs/helmet",
+    "docs": "https://helmetjs.github.io",
+    "repoPath": "packages/express/helmet",
+    "submittedBy": "claude",
+    "weeklyDownloads": 9584441,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 3166,
+      "raw": 11392
+    },
+    "githubStars": 10664,
+    "lastUpdated": "2026-04-01T03:10:07Z"
+  },
+  {
+    "name": "hpp",
+    "description": "HTTP Parameter Pollution prevention middleware for Express — protect your app from query string and body parameter duplication attacks.",
+    "category": "express",
+    "npm": "https://www.npmjs.com/package/hpp",
+    "github": "https://github.com/analog-nico/hpp",
+    "docs": "https://github.com/analog-nico/hpp",
+    "repoPath": "packages/express/hpp",
+    "submittedBy": "claude",
+    "weeklyDownloads": 153230,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 26157,
+      "raw": 158740
+    },
+    "githubStars": 396,
+    "lastUpdated": "2023-02-06T09:53:21Z"
+  },
+  {
+    "name": "morgan",
+    "description": "HTTP request logger middleware for Express — log incoming requests with timing, status codes, and response sizes.",
+    "category": "express",
+    "npm": "https://www.npmjs.com/package/morgan",
+    "github": "https://github.com/expressjs/morgan",
+    "docs": "https://github.com/expressjs/morgan",
+    "repoPath": "packages/express/morgan",
+    "submittedBy": "claude",
+    "weeklyDownloads": 9950645,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 5062,
+      "raw": 13399
+    },
+    "githubStars": 8174,
+    "lastUpdated": "2026-04-01T09:33:02Z"
+  },
+  {
+    "name": "passport",
+    "description": "Authentication middleware for Node.js — 500+ strategies for OAuth, OpenID, local username/password, JWT, and more.",
+    "category": "express",
+    "npm": "https://www.npmjs.com/package/passport",
+    "github": "https://github.com/jaredhanson/passport",
+    "docs": "https://www.passportjs.org/docs/",
+    "repoPath": "packages/express/passport",
+    "submittedBy": "claude",
+    "weeklyDownloads": 6389771,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 2876,
+      "raw": 9368
+    },
+    "githubStars": 23530,
+    "lastUpdated": "2024-08-16T21:56:14Z"
+  },
+  {
+    "name": "swagger-ui-express",
+    "description": "Serve Swagger UI from your Express app — auto-generate interactive API documentation from your OpenAPI spec.",
+    "category": "express",
+    "npm": "https://www.npmjs.com/package/swagger-ui-express",
+    "github": "https://github.com/scottie1984/swagger-ui-express",
+    "docs": "https://github.com/scottie1984/swagger-ui-express",
+    "repoPath": "packages/express/swagger-ui-express",
+    "submittedBy": "claude",
+    "weeklyDownloads": 3632091,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 2952,
+      "raw": 7393
+    },
+    "githubStars": 1495,
+    "lastUpdated": "2025-01-25T15:56:04Z"
+  },
+  {
+    "name": "@fastify/autoload",
+    "description": "Auto-load Fastify plugins from a directory — organize routes and plugins as files and let the framework discover them automatically.",
+    "category": "fastify",
+    "npm": "https://www.npmjs.com/package/@fastify/autoload",
+    "github": "https://github.com/fastify/fastify-autoload",
+    "docs": "https://github.com/fastify/fastify-autoload",
+    "repoPath": "packages/fastify/fastify-autoload",
+    "submittedBy": "claude",
+    "weeklyDownloads": 235481,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 3571,
+      "raw": 9250
+    },
+    "githubStars": 372,
+    "lastUpdated": "2026-04-19T21:24:08Z"
+  },
+  {
+    "name": "@fastify/cors",
+    "description": "CORS plugin for Fastify — configure cross-origin resource sharing with full support for preflight requests and dynamic origins.",
+    "category": "fastify",
+    "npm": "https://www.npmjs.com/package/@fastify/cors",
+    "github": "https://github.com/fastify/fastify-cors",
+    "docs": "https://github.com/fastify/fastify-cors",
+    "repoPath": "packages/fastify/fastify-cors",
+    "submittedBy": "claude",
+    "weeklyDownloads": 3130591,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 4018,
+      "raw": 15730
+    },
+    "githubStars": 484,
+    "lastUpdated": "2026-04-08T18:56:01Z"
+  },
+  {
+    "name": "@fastify/helmet",
+    "description": "Security headers plugin for Fastify — sets HTTP headers that protect against common web vulnerabilities like XSS, clickjacking, and MIME sniffing.",
+    "category": "fastify",
+    "npm": "https://www.npmjs.com/package/@fastify/helmet",
+    "github": "https://github.com/fastify/fastify-helmet",
+    "docs": "https://github.com/fastify/fastify-helmet",
+    "repoPath": "packages/fastify/fastify-helmet",
+    "submittedBy": "claude",
+    "weeklyDownloads": 1093873,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 4420,
+      "raw": 14972
+    },
+    "githubStars": 454,
+    "lastUpdated": "2026-04-08T18:58:29Z"
+  },
+  {
+    "name": "@fastify/jwt",
+    "description": "JWT authentication plugin for Fastify — sign, verify, and decode tokens with a decorator-based API that integrates with Fastify's request lifecycle.",
+    "category": "fastify",
+    "npm": "https://www.npmjs.com/package/@fastify/jwt",
+    "github": "https://github.com/fastify/fastify-jwt",
+    "docs": "https://github.com/fastify/fastify-jwt",
+    "repoPath": "packages/fastify/fastify-jwt",
+    "submittedBy": "claude",
+    "weeklyDownloads": 509850,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 33759,
+      "raw": 117308
+    },
+    "githubStars": 581,
+    "lastUpdated": "2026-04-08T18:58:20Z"
+  },
+  {
+    "name": "@fastify/multipart",
+    "description": "Multipart form data / file upload plugin for Fastify — stream files directly to storage without buffering in memory.",
+    "category": "fastify",
+    "npm": "https://www.npmjs.com/package/@fastify/multipart",
+    "github": "https://github.com/fastify/fastify-multipart",
+    "docs": "https://github.com/fastify/fastify-multipart",
+    "repoPath": "packages/fastify/fastify-multipart",
+    "submittedBy": "claude",
+    "weeklyDownloads": 1137774,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 13372,
+      "raw": 39776
+    },
+    "githubStars": 540,
+    "lastUpdated": "2026-04-08T18:58:12Z"
+  },
+  {
+    "name": "@fastify/rate-limit",
+    "description": "A low-overhead rate limiting plugin for Fastify — protect your API routes from abuse and brute-force attacks with per-route or global limits.",
+    "category": "fastify",
+    "npm": "https://www.npmjs.com/package/@fastify/rate-limit",
+    "github": "https://github.com/fastify/fastify-rate-limit",
+    "docs": "https://github.com/fastify/fastify-rate-limit#readme",
+    "repoPath": "packages/fastify/fastify-rate-limit",
+    "submittedBy": "claude",
+    "weeklyDownloads": 1007177,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 4974,
+      "raw": 19245
+    },
+    "githubStars": 589,
+    "lastUpdated": "2026-04-08T18:57:51Z"
+  },
+  {
+    "name": "@fastify/redis",
+    "description": "Redis connection plugin for Fastify — share a Redis client instance across your entire Fastify application via decorators.",
+    "category": "fastify",
+    "npm": "https://www.npmjs.com/package/@fastify/redis",
+    "github": "https://github.com/fastify/fastify-redis",
+    "docs": "https://github.com/fastify/fastify-redis",
+    "repoPath": "packages/fastify/fastify-redis",
+    "submittedBy": "claude",
+    "weeklyDownloads": 68030,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 40539,
+      "raw": 139119
+    },
+    "githubStars": 228,
+    "lastUpdated": "2026-04-08T18:57:48Z"
+  },
+  {
+    "name": "@fastify/sensible",
+    "description": "Sensible defaults and HTTP utilities for Fastify — adds HTTP error helpers, assertions, and common reply methods to every Fastify instance.",
+    "category": "fastify",
+    "npm": "https://www.npmjs.com/package/@fastify/sensible",
+    "github": "https://github.com/fastify/fastify-sensible",
+    "docs": "https://github.com/fastify/fastify-sensible",
+    "repoPath": "packages/fastify/fastify-sensible",
+    "submittedBy": "claude",
+    "weeklyDownloads": 419058,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 4023,
+      "raw": 11872
+    },
+    "githubStars": 533,
+    "lastUpdated": "2026-04-08T19:01:33Z"
+  },
+  {
+    "name": "@fastify/session",
+    "description": "Session management plugin for Fastify — server-side sessions with pluggable stores and secure cookie handling.",
+    "category": "fastify",
+    "npm": "https://www.npmjs.com/package/@fastify/session",
+    "github": "https://github.com/fastify/session",
+    "docs": "https://github.com/fastify/session",
+    "repoPath": "packages/fastify/fastify-session",
+    "submittedBy": "claude",
+    "weeklyDownloads": 108531,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 5502,
+      "raw": 15892
+    },
+    "githubStars": 124,
+    "lastUpdated": "2026-04-08T19:09:06Z"
+  },
+  {
+    "name": "@fastify/static",
+    "description": "Static file serving plugin for Fastify — serve assets from a local directory with range requests, ETag caching, and index files.",
+    "category": "fastify",
+    "npm": "https://www.npmjs.com/package/@fastify/static",
+    "github": "https://github.com/fastify/fastify-static",
+    "docs": "https://github.com/fastify/fastify-static",
+    "repoPath": "packages/fastify/fastify-static",
+    "submittedBy": "claude",
+    "weeklyDownloads": 2768093,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 49616,
+      "raw": 159011
+    },
+    "githubStars": 490,
+    "lastUpdated": "2026-04-18T14:06:01Z"
+  },
+  {
+    "name": "@fastify/swagger",
+    "description": "OpenAPI/Swagger documentation plugin for Fastify — auto-generate API specs from your route schemas with zero extra config.",
+    "category": "fastify",
+    "npm": "https://www.npmjs.com/package/@fastify/swagger",
+    "github": "https://github.com/fastify/fastify-swagger",
+    "docs": "https://github.com/fastify/fastify-swagger",
+    "repoPath": "packages/fastify/fastify-swagger",
+    "submittedBy": "claude",
+    "weeklyDownloads": 1248587,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 8353,
+      "raw": 25026
+    },
+    "githubStars": 1089,
+    "lastUpdated": "2026-04-08T19:01:27Z"
+  },
+  {
+    "name": "ai (Vercel AI SDK)",
+    "description": "Unified TypeScript SDK for building AI-powered apps — switch between 20+ LLM providers without rewriting code.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/ai",
+    "github": "https://github.com/vercel/ai",
+    "docs": "https://ai-sdk.dev",
+    "repoPath": "packages/general-js/ai-sdk",
+    "weeklyDownloads": 11461023,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 67694,
+      "raw": 273513
+    },
+    "githubStars": 23626,
+    "lastUpdated": "2026-04-19T06:02:25Z"
+  },
+  {
+    "name": "AOS",
+    "description": "An easy-to-use library that makes elements fade, slide, or zoom into view as the user scrolls down your page.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/aos",
+    "github": "https://github.com/michalsnik/aos",
+    "docs": "https://michalsnik.github.io/aos/",
+    "repoPath": "packages/general-js/aos",
+    "submittedBy": "moefc32",
+    "weeklyDownloads": 233241,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 4700,
+      "raw": 14111
+    },
+    "githubStars": 28065,
+    "lastUpdated": "2024-03-26T15:58:43Z"
+  },
+  {
+    "name": "archiver",
+    "description": "Streaming interface for generating ZIP and TAR archives in Node.js — create compressed archives programmatically from files, directories, and buffers.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/archiver",
+    "github": "https://github.com/archiverjs/node-archiver",
+    "docs": "https://www.archiverjs.com/",
+    "repoPath": "packages/general-js/archiver",
+    "submittedBy": "claude",
+    "weeklyDownloads": 24131777,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 92338,
+      "raw": 310541
+    },
+    "githubStars": 2951,
+    "lastUpdated": "2026-04-16T04:58:29Z"
+  },
+  {
+    "name": "axios",
+    "description": "Promise-based HTTP client for the browser and Node.js — interceptors, automatic JSON parsing, request cancellation, and progress events.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/axios",
+    "github": "https://github.com/axios/axios",
+    "docs": "https://axios-http.com/docs/intro",
+    "repoPath": "packages/general-js/axios",
+    "submittedBy": "claude",
+    "weeklyDownloads": 100278998,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 14390,
+      "raw": 36716
+    },
+    "githubStars": 109018,
+    "lastUpdated": "2026-04-20T01:32:24Z"
+  },
+  {
+    "name": "chalk",
+    "description": "Terminal string styling for Node.js — colorize and style CLI output with a chainable, expressive API.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/chalk",
+    "github": "https://github.com/chalk/chalk",
+    "docs": "https://github.com/chalk/chalk",
+    "repoPath": "packages/general-js/chalk",
+    "submittedBy": "claude",
+    "weeklyDownloads": 410404612,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 2398,
+      "raw": 5538
+    },
+    "githubStars": 23145,
+    "lastUpdated": "2026-01-27T06:30:36Z"
+  },
+  {
+    "name": "cheerio",
+    "description": "Fast, flexible HTML parsing and manipulation for Node.js — a jQuery-like API for working with HTML documents on the server.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/cheerio",
+    "github": "https://github.com/cheeriojs/cheerio",
+    "docs": "https://cheerio.js.org/",
+    "repoPath": "packages/general-js/cheerio",
+    "submittedBy": "claude",
+    "weeklyDownloads": 21448499,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 118350,
+      "raw": 316179
+    },
+    "githubStars": 30278,
+    "lastUpdated": "2026-04-15T16:30:26Z"
+  },
+  {
+    "name": "clsx",
+    "description": "Tiny utility for constructing className strings conditionally — the lightweight, fast alternative to classnames.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/clsx",
+    "github": "https://github.com/lukeed/clsx",
+    "docs": "https://github.com/lukeed/clsx",
+    "repoPath": "packages/general-js/clsx",
+    "submittedBy": "claude",
+    "weeklyDownloads": 88075642,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 353,
+      "raw": 563
+    },
+    "githubStars": 9731,
+    "lastUpdated": "2024-06-10T15:48:22Z"
+  },
+  {
+    "name": "commander",
+    "description": "Complete solution for Node.js command-line interfaces — parse arguments, generate help text, and build complex CLI tools with subcommands.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/commander",
+    "github": "https://github.com/tj/commander.js",
+    "docs": "https://github.com/tj/commander.js",
+    "repoPath": "packages/general-js/commander",
+    "submittedBy": "claude",
+    "weeklyDownloads": 366591738,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 11534,
+      "raw": 40315
+    },
+    "githubStars": 28140,
+    "lastUpdated": "2026-04-13T22:33:18Z"
+  },
+  {
+    "name": "consola",
+    "description": "Elegant console logger for JavaScript and Node.js — beautiful formatting, log levels, reporters, and minimal bundle size.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/consola",
+    "github": "https://github.com/unjs/consola",
+    "docs": "https://github.com/unjs/consola",
+    "repoPath": "packages/general-js/consola",
+    "submittedBy": "claude",
+    "weeklyDownloads": 31210004,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 2475,
+      "raw": 6346
+    },
+    "githubStars": 7240,
+    "lastUpdated": "2026-04-17T23:15:58Z"
+  },
+  {
+    "name": "date-fns",
+    "description": "Modern, functional JavaScript date utility library — 200+ pure functions for parsing, formatting, comparing, and manipulating dates without mutating anything.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/date-fns",
+    "github": "https://github.com/date-fns/date-fns",
+    "docs": "https://date-fns.org",
+    "repoPath": "packages/general-js/date-fns",
+    "submittedBy": "claude",
+    "weeklyDownloads": 79840609,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 17485,
+      "raw": 70722
+    },
+    "githubStars": 36555,
+    "lastUpdated": "2025-09-08T08:25:16Z"
+  },
+  {
+    "name": "dayjs",
+    "description": "Fast, 2KB date library for JavaScript — a Moment.js-compatible API with a tiny footprint and plugin system.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/dayjs",
+    "github": "https://github.com/iamkun/dayjs",
+    "docs": "https://day.js.org/docs/en/installation/installation",
+    "repoPath": "packages/general-js/dayjs",
+    "submittedBy": "claude",
+    "weeklyDownloads": 46031486,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 3033,
+      "raw": 7120
+    },
+    "githubStars": 48626,
+    "lastUpdated": "2026-04-17T21:46:01Z"
+  },
+  {
+    "name": "defu",
+    "description": "Deeply merge objects with defaults — a tiny utility for layered configuration that handles nested objects correctly.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/defu",
+    "github": "https://github.com/unjs/defu",
+    "docs": "https://github.com/unjs/defu",
+    "repoPath": "packages/general-js/defu",
+    "submittedBy": "claude",
+    "weeklyDownloads": 21106027,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 569,
+      "raw": 1060
+    },
+    "githubStars": 1334,
+    "lastUpdated": "2026-04-19T11:34:19Z"
+  },
+  {
+    "name": "destr",
+    "description": "Safe, fast alternative to JSON.parse — handles prototype pollution, JSON syntax errors, and common edge cases gracefully.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/destr",
+    "github": "https://github.com/unjs/destr",
+    "docs": "https://github.com/unjs/destr",
+    "repoPath": "packages/general-js/destr",
+    "submittedBy": "claude",
+    "weeklyDownloads": 14270159,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 721,
+      "raw": 1413
+    },
+    "githubStars": 1369,
+    "lastUpdated": "2026-04-17T23:33:14Z"
+  },
+  {
+    "name": "Drizzle ORM",
+    "description": "A tool that helps you talk to your database using JavaScript in a way that feels natural and stays very fast.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/drizzle-orm",
+    "github": "https://github.com/drizzle-team/drizzle-orm",
+    "docs": "https://orm.drizzle.team/",
+    "repoPath": "packages/general-js/drizzle-orm",
+    "submittedBy": "moefc32",
+    "weeklyDownloads": 7366364,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 8580,
+      "raw": 27977
+    },
+    "githubStars": 33917,
+    "lastUpdated": "2026-04-19T09:09:27Z"
+  },
+  {
+    "name": "Apache ECharts",
+    "description": "A library that turns your data into beautiful, interactive maps and charts that users can explore.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/echarts",
+    "github": "https://github.com/apache/echarts",
+    "docs": "https://echarts.apache.org/",
+    "repoPath": "packages/general-js/echarts",
+    "submittedBy": "moefc32",
+    "weeklyDownloads": 2595994,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 361843,
+      "raw": 1109085
+    },
+    "githubStars": 66190,
+    "lastUpdated": "2026-04-16T09:47:40Z"
+  },
+  {
+    "name": "exceljs",
+    "description": "Read, write, and manipulate Excel workbooks in Node.js — full support for formulas, styles, charts, and streaming large datasets.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/exceljs",
+    "github": "https://github.com/exceljs/exceljs",
+    "docs": "https://github.com/exceljs/exceljs",
+    "repoPath": "packages/general-js/exceljs",
+    "submittedBy": "claude",
+    "weeklyDownloads": 6342233,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 255862,
+      "raw": 932502
+    },
+    "githubStars": 15253,
+    "lastUpdated": "2025-01-21T16:00:46Z"
+  },
+  {
+    "name": "Fuse.js",
+    "description": "A \"fuzzy search\" tool that helps users find what they are looking for even if they make a typo or spell a word wrong.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/fuse.js",
+    "github": "https://github.com/krisk/Fuse",
+    "docs": "https://www.fusejs.io/",
+    "repoPath": "packages/general-js/fuse.js",
+    "submittedBy": "moefc32",
+    "weeklyDownloads": 8960869,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 8259,
+      "raw": 23662
+    },
+    "githubStars": 20174,
+    "lastUpdated": "2026-04-18T22:14:54Z"
+  },
+  {
+    "name": "got",
+    "description": "Human-friendly HTTP requests for Node.js — a powerful fetch alternative with retry, pagination, caching, and hooks built in.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/got",
+    "github": "https://github.com/sindresorhus/got",
+    "docs": "https://github.com/sindresorhus/got",
+    "repoPath": "packages/general-js/got",
+    "submittedBy": "claude",
+    "weeklyDownloads": 32459963,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 44860,
+      "raw": 146392
+    },
+    "githubStars": 14897,
+    "lastUpdated": "2026-04-13T14:59:22Z"
+  },
+  {
+    "name": "Hono",
+    "description": "A tiny, lightning-fast web framework that helps you build APIs and websites that run quickly all over the world.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/hono",
+    "github": "https://github.com/honojs/hono",
+    "docs": "https://hono.dev/docs/",
+    "repoPath": "packages/general-js/hono",
+    "submittedBy": "moefc32",
+    "weeklyDownloads": 33985622,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 7370,
+      "raw": 18285
+    },
+    "githubStars": 30017,
+    "lastUpdated": "2026-04-15T06:13:58Z"
+  },
+  {
+    "name": "inquirer",
+    "description": "Interactive CLI user interfaces for Node.js — prompt users for input, choices, confirmations, and passwords in terminal tools.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/inquirer",
+    "github": "https://github.com/SBoudrias/Inquirer.js",
+    "docs": "https://github.com/SBoudrias/Inquirer.js",
+    "repoPath": "packages/general-js/inquirer",
+    "submittedBy": "claude",
+    "weeklyDownloads": 43114366,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 202867,
+      "raw": 396097
+    },
+    "githubStars": 21506,
+    "lastUpdated": "2026-04-19T16:51:14Z"
+  },
+  {
+    "name": "jsPDF",
+    "description": "Generate and download PDF files entirely in the browser — no server, no backend, no dependencies.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/jspdf",
+    "github": "https://github.com/parallax/jsPDF",
+    "docs": "https://artskydj.github.io/jsPDF/docs/",
+    "repoPath": "packages/general-js/jspdf",
+    "weeklyDownloads": 12461954,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 127154,
+      "raw": 399936
+    },
+    "githubStars": 31217,
+    "lastUpdated": "2026-04-16T04:18:49Z"
+  },
+  {
+    "name": "Ky",
+    "description": "A friendlier version of the standard fetch function used to request data from other websites or servers.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/ky",
+    "github": "https://github.com/sindresorhus/ky",
+    "docs": "https://github.com/sindresorhus/ky",
+    "repoPath": "packages/general-js/ky",
+    "submittedBy": "moefc32",
+    "weeklyDownloads": 5245021,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 7173,
+      "raw": 20505
+    },
+    "githubStars": 16750,
+    "lastUpdated": "2026-04-14T12:36:29Z"
+  },
+  {
+    "name": "lenis",
+    "description": "Lightweight, smooth scroll library — butter-smooth scrolling without the performance cost of heavy alternatives.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/lenis",
+    "github": "https://github.com/darkroomengineering/lenis",
+    "docs": "https://lenis.darkroom.engineering",
+    "repoPath": "packages/general-js/lenis",
+    "weeklyDownloads": 426604,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 5109,
+      "raw": 17731
+    },
+    "githubStars": 13663,
+    "lastUpdated": "2026-04-15T09:53:47Z"
+  },
+  {
+    "name": "Marked",
+    "description": "A high-speed tool that takes text written in Markdown and instantly converts it into proper HTML for your website.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/marked",
+    "github": "https://github.com/markedjs/marked",
+    "docs": "https://marked.js.org/",
+    "repoPath": "packages/general-js/marked",
+    "submittedBy": "moefc32",
+    "weeklyDownloads": 38438112,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 12373,
+      "raw": 40873
+    },
+    "githubStars": 36744,
+    "lastUpdated": "2026-04-20T02:25:54Z"
+  },
+  {
+    "name": "mathjs",
+    "description": "Extensive mathematics library for JavaScript and Node.js — expression parsing, symbolic algebra, matrix operations, units, and statistics.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/mathjs",
+    "github": "https://github.com/josdejong/mathjs",
+    "docs": "https://mathjs.org/docs/",
+    "repoPath": "packages/general-js/mathjs",
+    "submittedBy": "claude",
+    "weeklyDownloads": 2703163,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 196751,
+      "raw": 729148
+    },
+    "githubStars": 15026,
+    "lastUpdated": "2026-04-16T13:29:21Z"
+  },
+  {
+    "name": "mitt",
+    "description": "Tiny functional event emitter for JavaScript — 200 bytes, zero dependencies, and works everywhere.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/mitt",
+    "github": "https://github.com/developit/mitt",
+    "docs": "https://github.com/developit/mitt",
+    "repoPath": "packages/general-js/mitt",
+    "submittedBy": "claude",
+    "weeklyDownloads": 21624511,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 282,
+      "raw": 488
+    },
+    "githubStars": 11864,
+    "lastUpdated": "2024-08-14T08:58:20Z"
+  },
+  {
+    "name": "nanoid",
+    "description": "Tiny, secure, URL-friendly unique string ID generator — 130 bytes, no dependencies, cryptographically strong.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/nanoid",
+    "github": "https://github.com/ai/nanoid",
+    "docs": "https://github.com/ai/nanoid",
+    "repoPath": "packages/general-js/nanoid",
+    "submittedBy": "claude",
+    "weeklyDownloads": 153079501,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 504,
+      "raw": 830
+    },
+    "githubStars": 26745,
+    "lastUpdated": "2026-04-15T14:10:00Z"
+  },
+  {
+    "name": "ofetch",
+    "description": "A better fetch API with smart defaults — works universally in browsers, Node.js, and edge runtimes with automatic JSON parsing and error handling.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/ofetch",
+    "github": "https://github.com/unjs/ofetch",
+    "docs": "https://github.com/unjs/ofetch",
+    "repoPath": "packages/general-js/ofetch",
+    "submittedBy": "claude",
+    "weeklyDownloads": 6424545,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 3881,
+      "raw": 9527
+    },
+    "githubStars": 5241,
+    "lastUpdated": "2026-04-13T15:58:15Z"
+  },
+  {
+    "name": "p-limit",
+    "description": "Run multiple promise-returning functions with limited concurrency — control how many async operations run in parallel.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/p-limit",
+    "github": "https://github.com/sindresorhus/p-limit",
+    "docs": "https://github.com/sindresorhus/p-limit",
+    "repoPath": "packages/general-js/p-limit",
+    "submittedBy": "claude",
+    "weeklyDownloads": 242182289,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 887,
+      "raw": 1700
+    }
+  },
+  {
+    "name": "p-retry",
+    "description": "Retry a promise-returning function with configurable attempts, delays, and exponential backoff.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/p-retry",
+    "github": "https://github.com/sindresorhus/p-retry",
+    "docs": "https://github.com/sindresorhus/p-retry",
+    "repoPath": "packages/general-js/p-retry",
+    "submittedBy": "claude",
+    "weeklyDownloads": 35042745,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 1767,
+      "raw": 4349
+    },
+    "githubStars": 1006,
+    "lastUpdated": "2026-03-26T16:08:20Z"
+  },
+  {
+    "name": "papaparse",
+    "description": "Fast, powerful CSV parser for JavaScript — handles large files via streaming, auto-detects delimiters, and works in browsers and Node.js.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/papaparse",
+    "github": "https://github.com/mholt/PapaParse",
+    "docs": "https://www.papaparse.com/docs",
+    "repoPath": "packages/general-js/papaparse",
+    "submittedBy": "claude",
+    "weeklyDownloads": 9333966,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 6945,
+      "raw": 19259
+    }
+  },
+  {
+    "name": "pdf-lib",
+    "description": "Create and modify PDF documents in JavaScript — works in Node.js, browsers, React Native, and Deno without any native dependencies.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/pdf-lib",
+    "github": "https://github.com/Hopding/pdf-lib",
+    "docs": "https://pdf-lib.js.org/",
+    "repoPath": "packages/general-js/pdf-lib",
+    "submittedBy": "claude",
+    "weeklyDownloads": 5068534,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 164718,
+      "raw": 389618
+    },
+    "githubStars": 8391,
+    "lastUpdated": "2024-07-17T12:18:51Z"
+  },
+  {
+    "name": "qrcode",
+    "description": "QR code generator for Node.js and the browser — generate QR codes as PNG images, SVGs, or terminal ASCII art.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/qrcode",
+    "github": "https://github.com/soldair/node-qrcode",
+    "docs": "https://github.com/soldair/node-qrcode",
+    "repoPath": "packages/general-js/qrcode",
+    "submittedBy": "claude",
+    "weeklyDownloads": 9352513,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 8750,
+      "raw": 23456
+    },
+    "githubStars": 8082,
+    "lastUpdated": "2024-08-23T14:37:17Z"
+  },
+  {
+    "name": "superjson",
+    "description": "JSON superset that serializes JavaScript's full type system — safely transport Dates, Maps, Sets, BigInts, and undefined over the wire.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/superjson",
+    "github": "https://github.com/blitz-js/superjson",
+    "docs": "https://github.com/blitz-js/superjson",
+    "repoPath": "packages/general-js/superjson",
+    "submittedBy": "claude",
+    "weeklyDownloads": 6549086,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 3909,
+      "raw": 10769
+    }
+  },
+  {
+    "name": "tailwind-merge",
+    "description": "Merge Tailwind CSS class names without style conflicts — intelligently resolves which utility class wins when duplicates or conflicts exist.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/tailwind-merge",
+    "github": "https://github.com/dcastil/tailwind-merge",
+    "docs": "https://github.com/dcastil/tailwind-merge",
+    "repoPath": "packages/general-js/tailwind-merge",
+    "submittedBy": "claude",
+    "weeklyDownloads": 59719238,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 8676,
+      "raw": 27742
+    }
+  },
+  {
+    "name": "uuid",
+    "description": "RFC4122 UUID generation for JavaScript — create v1, v3, v4, v5, and v7 UUIDs for entity identification and distributed systems.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/uuid",
+    "github": "https://github.com/uuidjs/uuid",
+    "docs": "https://github.com/uuidjs/uuid",
+    "repoPath": "packages/general-js/uuid",
+    "submittedBy": "claude",
+    "weeklyDownloads": 239777237,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 3763,
+      "raw": 9993
+    },
+    "githubStars": 15254,
+    "lastUpdated": "2026-04-08T15:28:56Z"
+  },
+  {
+    "name": "valibot",
+    "description": "Tiny, tree-shakeable schema validation library — a Zod alternative that won't bloat your bundle.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/valibot",
+    "github": "https://github.com/fabian-hiller/valibot",
+    "docs": "https://valibot.dev",
+    "repoPath": "packages/general-js/valibot",
+    "weeklyDownloads": 8239898,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 14101,
+      "raw": 83506
+    },
+    "githubStars": 8564,
+    "lastUpdated": "2026-04-12T03:37:38Z"
+  },
+  {
+    "name": "zod",
+    "description": "TypeScript-first schema validation with static type inference — define your data shape once, get runtime validation and compile-time types for free.",
+    "category": "general-js",
+    "npm": "https://www.npmjs.com/package/zod",
+    "github": "https://github.com/colinhacks/zod",
+    "docs": "https://zod.dev",
+    "repoPath": "packages/general-js/zod",
+    "submittedBy": "claude",
+    "weeklyDownloads": 158387812,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 58449,
+      "raw": 267883
+    },
+    "githubStars": 42413,
+    "lastUpdated": "2026-02-15T14:20:41Z"
+  },
+  {
+    "name": "bcryptjs",
+    "description": "Pure JavaScript bcrypt password hashing — no native dependencies, same API as bcrypt, works anywhere Node.js runs.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/bcryptjs",
+    "github": "https://github.com/dcodeIO/bcrypt.js",
+    "docs": "https://github.com/dcodeIO/bcrypt.js",
+    "repoPath": "packages/node/bcryptjs",
+    "submittedBy": "claude",
+    "weeklyDownloads": 8160657,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 9175,
+      "raw": 20133
+    },
+    "githubStars": 3792,
+    "lastUpdated": "2026-03-26T01:47:11Z"
+  },
+  {
+    "name": "bullmq",
+    "description": "Premium message queue and job scheduler for Node.js backed by Redis — reliable background job processing with retries, priorities, and rate limiting.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/bullmq",
+    "github": "https://github.com/taskforcesh/bullmq",
+    "docs": "https://docs.bullmq.io",
+    "repoPath": "packages/node/bullmq",
+    "submittedBy": "claude",
+    "weeklyDownloads": 4409392,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 161740,
+      "raw": 713892
+    },
+    "githubStars": 8726,
+    "lastUpdated": "2026-04-14T04:49:13Z"
+  },
+  {
+    "name": "dotenv",
+    "description": "Load environment variables from a `.env` file into `process.env` — the standard way to manage configuration in Node.js apps.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/dotenv",
+    "github": "https://github.com/motdotla/dotenv",
+    "docs": "https://github.com/motdotla/dotenv",
+    "repoPath": "packages/node/dotenv",
+    "submittedBy": "claude",
+    "weeklyDownloads": 119559725,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 2559,
+      "raw": 5795
+    },
+    "githubStars": 20371,
+    "lastUpdated": "2026-04-12T16:40:36Z"
+  },
+  {
+    "name": "execa",
+    "description": "Process execution for Node.js — a better child_process with Promises, streaming, and a clean cross-platform API.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/execa",
+    "github": "https://github.com/sindresorhus/execa",
+    "docs": "https://github.com/sindresorhus/execa",
+    "repoPath": "packages/node/execa",
+    "submittedBy": "claude",
+    "weeklyDownloads": 126673751,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 32177,
+      "raw": 103529
+    }
+  },
+  {
+    "name": "ioredis",
+    "description": "Robust, full-featured Redis client for Node.js — Cluster, Sentinel, pipelining, Lua scripting, and Streams support.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/ioredis",
+    "github": "https://github.com/redis/ioredis",
+    "docs": "https://github.com/redis/ioredis",
+    "repoPath": "packages/node/ioredis",
+    "submittedBy": "claude",
+    "weeklyDownloads": 16657039,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 39118,
+      "raw": 135857
+    }
+  },
+  {
+    "name": "jsonwebtoken",
+    "description": "JWT implementation for Node.js — sign, verify, and decode JSON Web Tokens for stateless authentication.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/jsonwebtoken",
+    "github": "https://github.com/auth0/node-jsonwebtoken",
+    "docs": "https://github.com/auth0/node-jsonwebtoken",
+    "repoPath": "packages/node/jsonwebtoken",
+    "submittedBy": "claude",
+    "weeklyDownloads": 40078903,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 16002,
+      "raw": 52984
+    },
+    "githubStars": 18169,
+    "lastUpdated": "2026-03-30T18:59:54Z"
+  },
+  {
+    "name": "mongoose",
+    "description": "Elegant MongoDB object modeling for Node.js — schemas, validation, middleware, and population for working with MongoDB.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/mongoose",
+    "github": "https://github.com/Automattic/mongoose",
+    "docs": "https://mongoosejs.com/docs/",
+    "repoPath": "packages/node/mongoose",
+    "submittedBy": "claude",
+    "weeklyDownloads": 4953849,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 344425,
+      "raw": 1858459
+    }
+  },
+  {
+    "name": "multer",
+    "description": "Node.js middleware for handling multipart/form-data — the standard solution for file uploads in Express and Fastify apps.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/multer",
+    "github": "https://github.com/expressjs/multer",
+    "docs": "https://github.com/expressjs/multer",
+    "repoPath": "packages/node/multer",
+    "submittedBy": "claude",
+    "weeklyDownloads": 14127739,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 9495,
+      "raw": 35552
+    }
+  },
+  {
+    "name": "nodemailer",
+    "description": "The standard Node.js library for sending email — supports SMTP, OAuth2, and every major email provider with a simple, battle-tested API.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/nodemailer",
+    "github": "https://github.com/nodemailer/nodemailer",
+    "docs": "https://nodemailer.com/",
+    "repoPath": "packages/node/nodemailer",
+    "submittedBy": "claude",
+    "weeklyDownloads": 12546687,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 59121,
+      "raw": 215494
+    }
+  },
+  {
+    "name": "pino",
+    "description": "Super-fast, low-overhead JSON logger for Node.js — structured logs with transports, redaction, and child loggers.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/pino",
+    "github": "https://github.com/pinojs/pino",
+    "docs": "https://getpino.io/",
+    "repoPath": "packages/node/pino",
+    "submittedBy": "claude",
+    "weeklyDownloads": 27791260,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 1479,
+      "raw": 8337
+    },
+    "githubStars": 17668,
+    "lastUpdated": "2026-04-11T20:46:08Z"
+  },
+  {
+    "name": "pm2",
+    "description": "Production process manager for Node.js — cluster mode, zero-downtime reloads, log management, and startup scripts.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/pm2",
+    "github": "https://github.com/Unitech/pm2",
+    "docs": "https://pm2.keymetrics.io/docs/",
+    "repoPath": "packages/node/pm2",
+    "submittedBy": "claude",
+    "weeklyDownloads": 2737881,
+    "hasTypes": true,
+    "githubStars": 43073,
+    "lastUpdated": "2026-03-27T13:30:12Z"
+  },
+  {
+    "name": "prisma",
+    "description": "Next-generation ORM for Node.js and TypeScript — auto-generated, type-safe query client with migrations, schema-first design, and multi-database support.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/prisma",
+    "github": "https://github.com/prisma/prisma",
+    "docs": "https://www.prisma.io/docs/",
+    "repoPath": "packages/node/prisma",
+    "submittedBy": "claude",
+    "weeklyDownloads": 9651557,
+    "hasTypes": true,
+    "githubStars": 45769,
+    "lastUpdated": "2026-04-15T10:03:15Z"
+  },
+  {
+    "name": "sharp",
+    "description": "High-performance Node.js image processing — resize, convert, compress, and transform images using libvips at native speed.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/sharp",
+    "github": "https://github.com/lovell/sharp",
+    "docs": "https://sharp.pixelplumbing.com/",
+    "repoPath": "packages/node/sharp",
+    "submittedBy": "claude",
+    "weeklyDownloads": 51835704,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 35131,
+      "raw": 121902
+    }
+  },
+  {
+    "name": "socket.io",
+    "description": "Real-time, bidirectional event-based communication for Node.js — WebSockets with automatic fallback, rooms, namespaces, and horizontal scaling support.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/socket.io",
+    "github": "https://github.com/socketio/socket.io",
+    "docs": "https://socket.io/docs/v4/",
+    "repoPath": "packages/node/socket-io",
+    "submittedBy": "claude",
+    "weeklyDownloads": 12574750,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 55426,
+      "raw": 267306
+    },
+    "githubStars": 63029,
+    "lastUpdated": "2026-04-16T06:11:29Z"
+  },
+  {
+    "name": "tsx",
+    "description": "TypeScript execute — run TypeScript files directly in Node.js without a compilation step, with ESM support and watch mode.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/tsx",
+    "github": "https://github.com/privatenumber/tsx",
+    "docs": "https://tsx.is/",
+    "repoPath": "packages/node/tsx",
+    "submittedBy": "claude",
+    "weeklyDownloads": 41438058,
+    "hasTypes": false
+  },
+  {
+    "name": "turbo (Turborepo)",
+    "description": "High-performance monorepo build system with smart caching — only rebuilds what actually changed.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/turbo",
+    "github": "https://github.com/vercel/turborepo",
+    "docs": "https://turbo.build/repo/docs",
+    "repoPath": "packages/node/turborepo",
+    "weeklyDownloads": 13065265,
+    "hasTypes": false,
+    "bundleSize": {
+      "gzip": 2088,
+      "raw": 5468
+    },
+    "githubStars": 30208,
+    "lastUpdated": "2026-04-15T22:10:21Z"
+  },
+  {
+    "name": "@vercel/blob",
+    "description": "Globally distributed file storage with a 3-line API — no S3 buckets, IAM policies, or config required.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/@vercel/blob",
+    "github": "https://github.com/vercel/storage/tree/main/packages/blob",
+    "docs": "https://vercel.com/docs/storage/vercel-blob",
+    "repoPath": "packages/node/vercel-blob",
+    "weeklyDownloads": 3510524,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 9075,
+      "raw": 28172
+    },
+    "githubStars": 590,
+    "lastUpdated": "2026-04-14T20:32:39Z"
+  },
+  {
+    "name": "@vercel/edge-config",
+    "description": "Read global configuration at sub-millisecond speed — no database round-trips for critical runtime data.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/@vercel/edge-config",
+    "github": "https://github.com/vercel/storage/tree/main/packages/edge-config",
+    "docs": "https://vercel.com/docs/storage/edge-config",
+    "repoPath": "packages/node/vercel-edge-config",
+    "weeklyDownloads": 649648,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 3355,
+      "raw": 10446
+    },
+    "githubStars": 590,
+    "lastUpdated": "2026-04-14T20:32:39Z"
+  },
+  {
+    "name": "@vercel/functions",
+    "description": "Utilities for Vercel Serverless and Edge Functions — geolocation, IP detection, and background tasks made easy.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/@vercel/functions",
+    "github": "https://github.com/vercel/vercel/tree/main/packages/functions",
+    "docs": "https://vercel.com/docs/functions/vercel-functions-package",
+    "repoPath": "packages/node/vercel-functions",
+    "weeklyDownloads": 2865367,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 4240,
+      "raw": 16268
+    },
+    "githubStars": 15285,
+    "lastUpdated": "2026-04-14T04:45:21Z"
+  },
+  {
+    "name": "winston",
+    "description": "Versatile, multi-transport logging library for Node.js — log to console, files, databases, and external services simultaneously.",
+    "category": "node",
+    "npm": "https://www.npmjs.com/package/winston",
+    "github": "https://github.com/winstonjs/winston",
+    "docs": "https://github.com/winstonjs/winston",
+    "repoPath": "packages/node/winston",
+    "submittedBy": "claude",
+    "weeklyDownloads": 21885679,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 38036,
+      "raw": 149729
+    }
+  },
+  {
+    "name": "cmdk",
+    "description": "Fast, composable command palette for React — keyboard-driven search UI with fuzzy filtering and accessible markup out of the box.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/cmdk",
+    "github": "https://github.com/pacocoursey/cmdk",
+    "docs": "https://cmdk.paco.me/",
+    "repoPath": "packages/react/cmdk",
+    "submittedBy": "claude",
+    "weeklyDownloads": 35716232,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 14922,
+      "raw": 46012
+    }
+  },
+  {
+    "name": "@dnd-kit/core",
+    "description": "Modern, accessible drag-and-drop toolkit for React — fully customizable with keyboard support, collision detection, and zero dependencies.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/@dnd-kit/core",
+    "github": "https://github.com/clauderic/dnd-kit",
+    "docs": "https://docs.dndkit.com/",
+    "repoPath": "packages/react/dnd-kit",
+    "submittedBy": "claude",
+    "weeklyDownloads": 13158939,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 14249,
+      "raw": 43700
+    },
+    "githubStars": 16982,
+    "lastUpdated": "2026-04-15T11:40:56Z"
+  },
+  {
+    "name": "embla-carousel-react",
+    "description": "Lightweight, extensible carousel library for React — smooth scrolling, touch/mouse drag, and full CSS control without prescribing markup.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/embla-carousel-react",
+    "github": "https://github.com/davidjerleke/embla-carousel",
+    "docs": "https://www.embla-carousel.com/",
+    "repoPath": "packages/react/embla-carousel",
+    "submittedBy": "claude",
+    "weeklyDownloads": 32298818,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 7277,
+      "raw": 17975
+    }
+  },
+  {
+    "name": "flags",
+    "description": "Provider-agnostic feature flags SDK for Next.js and React — toggle features without redeploying.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/flags",
+    "github": "https://github.com/vercel/flags",
+    "docs": "https://flags-sdk.dev",
+    "repoPath": "packages/react/flags",
+    "weeklyDownloads": 873200,
+    "hasTypes": false,
+    "bundleSize": {
+      "gzip": 11499,
+      "raw": 42560
+    },
+    "githubStars": 581,
+    "lastUpdated": "2026-04-14T05:09:46Z"
+  },
+  {
+    "name": "framer-motion",
+    "description": "Production-ready declarative animation library for React — gestures, layout animations, and scroll-driven effects with a clean API.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/framer-motion",
+    "github": "https://github.com/framer/motion",
+    "docs": "https://www.framer.com/motion/",
+    "repoPath": "packages/react/framer-motion",
+    "submittedBy": "claude",
+    "weeklyDownloads": 39155676,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 59124,
+      "raw": 176426
+    }
+  },
+  {
+    "name": "jotai",
+    "description": "Primitive and flexible atomic state management for React — derive state from atoms without a centralized store.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/jotai",
+    "github": "https://github.com/pmndrs/jotai",
+    "docs": "https://jotai.org/docs/introduction",
+    "repoPath": "packages/react/jotai",
+    "submittedBy": "claude",
+    "weeklyDownloads": 3796422,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 3987,
+      "raw": 9322
+    }
+  },
+  {
+    "name": "lucide-react",
+    "description": "Beautiful, consistent open-source icon library for React — 1,500+ pixel-perfect SVG icons as individual tree-shakeable components.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/lucide-react",
+    "github": "https://github.com/lucide-icons/lucide",
+    "docs": "https://lucide.dev/guide/packages/lucide-react",
+    "repoPath": "packages/react/lucide-react",
+    "submittedBy": "claude",
+    "weeklyDownloads": 73931439,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 153183,
+      "raw": 610613
+    }
+  },
+  {
+    "name": "milkdown",
+    "description": "Plugin-driven, WYSIWYG Markdown editor for React with a clean prose editing experience.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/@milkdown/core",
+    "github": "https://github.com/Milkdown/milkdown",
+    "docs": "https://milkdown.dev",
+    "repoPath": "packages/react/milkdown",
+    "weeklyDownloads": 129919,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 67232,
+      "raw": 218186
+    },
+    "githubStars": 11338,
+    "lastUpdated": "2026-04-14T02:38:59Z"
+  },
+  {
+    "name": "nuqs",
+    "description": "Type-safe URL search params as React state — keep filters, sorting, and pagination in the URL.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/nuqs",
+    "github": "https://github.com/47ng/nuqs",
+    "docs": "https://nuqs.47ng.com",
+    "repoPath": "packages/react/nuqs",
+    "weeklyDownloads": 2421466,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 6589,
+      "raw": 18658
+    },
+    "githubStars": 10345,
+    "lastUpdated": "2026-04-11T04:54:38Z"
+  },
+  {
+    "name": "@radix-ui/react-dialog",
+    "description": "Fully accessible, unstyled dialog (modal) primitive for React — WAI-ARIA compliant with focus trapping, scroll locking, and composable parts.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/@radix-ui/react-dialog",
+    "github": "https://github.com/radix-ui/primitives",
+    "docs": "https://www.radix-ui.com/primitives/docs/components/dialog",
+    "repoPath": "packages/react/radix-dialog",
+    "submittedBy": "claude",
+    "weeklyDownloads": 49691977,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 10830,
+      "raw": 31487
+    },
+    "githubStars": 18772,
+    "lastUpdated": "2026-02-13T17:32:48Z"
+  },
+  {
+    "name": "react-day-picker",
+    "description": "Flexible, accessible date picker component for React — full customization of styles, locales, and selection modes.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/react-day-picker",
+    "github": "https://github.com/gpbl/react-day-picker",
+    "docs": "https://react-day-picker.js.org/",
+    "repoPath": "packages/react/react-day-picker",
+    "submittedBy": "claude",
+    "weeklyDownloads": 37267706,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 2450,
+      "raw": 67432
+    },
+    "githubStars": 6773,
+    "lastUpdated": "2026-04-14T10:48:16Z"
+  },
+  {
+    "name": "react-dropzone",
+    "description": "Simple HTML5 drag-and-drop zone for file uploads in React — handles file selection, validation, and previews with a flexible hook API.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/react-dropzone",
+    "github": "https://github.com/react-dropzone/react-dropzone",
+    "docs": "https://react-dropzone.js.org/",
+    "repoPath": "packages/react/react-dropzone",
+    "submittedBy": "claude",
+    "weeklyDownloads": 9394227,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 16275,
+      "raw": 59900
+    }
+  },
+  {
+    "name": "react-email",
+    "description": "Build cross-client compatible HTML emails using React components.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/react-email",
+    "github": "https://github.com/resend/react-email",
+    "docs": "https://react.email/docs",
+    "repoPath": "packages/react/react-email",
+    "weeklyDownloads": 1943822,
+    "hasTypes": false,
+    "bundleSize": {
+      "gzip": 523788,
+      "raw": 1845571
+    },
+    "githubStars": 18391,
+    "lastUpdated": "2026-04-14T02:13:20Z"
+  },
+  {
+    "name": "react-hook-form",
+    "description": "Performant, flexible form management for React — minimal re-renders, easy validation, and zero dependencies.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/react-hook-form",
+    "github": "https://github.com/react-hook-form/react-hook-form",
+    "docs": "https://react-hook-form.com/",
+    "repoPath": "packages/react/react-hook-form",
+    "submittedBy": "claude",
+    "weeklyDownloads": 49833740,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 11894,
+      "raw": 33917
+    },
+    "githubStars": 44662,
+    "lastUpdated": "2026-04-09T21:53:16Z"
+  },
+  {
+    "name": "react-resizable-panels",
+    "description": "Resizable panel group layouts for React — drag handles between panels with keyboard support and persistent sizing.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/react-resizable-panels",
+    "github": "https://github.com/bvaughn/react-resizable-panels",
+    "docs": "https://react-resizable-panels.vercel.app/",
+    "repoPath": "packages/react/react-resizable-panels",
+    "submittedBy": "claude",
+    "weeklyDownloads": 33399931,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 10774,
+      "raw": 32580
+    }
+  },
+  {
+    "name": "react-wrap-balancer",
+    "description": "Balanced text wrapping for React — prevent awkward single-word last lines in headings and short copy blocks.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/react-wrap-balancer",
+    "github": "https://github.com/shuding/react-wrap-balancer",
+    "docs": "https://react-wrap-balancer.vercel.app/",
+    "repoPath": "packages/react/react-wrap-balancer",
+    "submittedBy": "claude",
+    "weeklyDownloads": 172825,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 1183,
+      "raw": 2166
+    }
+  },
+  {
+    "name": "recharts",
+    "description": "Composable charting library for React built on D3 — declarative chart components that are easy to customize and animate.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/recharts",
+    "github": "https://github.com/recharts/recharts",
+    "docs": "https://recharts.org/",
+    "repoPath": "packages/react/recharts",
+    "submittedBy": "claude",
+    "weeklyDownloads": 46536740,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 139272,
+      "raw": 527502
+    }
+  },
+  {
+    "name": "sonner",
+    "description": "Opinionated, beautiful toast notifications for React — stacked toasts with automatic dismissal and a dead-simple API.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/sonner",
+    "github": "https://github.com/emilkowalski/sonner",
+    "docs": "https://sonner.emilkowal.ski/",
+    "repoPath": "packages/react/sonner",
+    "submittedBy": "claude",
+    "weeklyDownloads": 42586457,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 9329,
+      "raw": 34217
+    }
+  },
+  {
+    "name": "swr",
+    "description": "React Hooks library for data fetching with built-in caching, revalidation, and deduplication.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/swr",
+    "github": "https://github.com/vercel/swr",
+    "docs": "https://swr.vercel.app",
+    "repoPath": "packages/react/swr",
+    "weeklyDownloads": 10020493,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 4863,
+      "raw": 11298
+    },
+    "githubStars": 32350,
+    "lastUpdated": "2026-04-12T01:09:58Z"
+  },
+  {
+    "name": "@tanstack/react-query",
+    "description": "Async state management for React — powerful data fetching, caching, background sync, and server state without writing a single reducer.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/@tanstack/react-query",
+    "github": "https://github.com/TanStack/query",
+    "docs": "https://tanstack.com/query/latest",
+    "repoPath": "packages/react/tanstack-query",
+    "submittedBy": "claude",
+    "weeklyDownloads": 48090078,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 13451,
+      "raw": 45773
+    },
+    "githubStars": 49157,
+    "lastUpdated": "2026-04-16T06:32:46Z"
+  },
+  {
+    "name": "@tanstack/react-form",
+    "description": "Type-safe, headless form state management for React — first-class TypeScript inference, async validation, and framework-agnostic core.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/@tanstack/react-form",
+    "github": "https://github.com/TanStack/form",
+    "docs": "https://tanstack.com/form/latest",
+    "repoPath": "packages/react/tanstack-react-form",
+    "submittedBy": "claude",
+    "weeklyDownloads": 1503305,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 14611,
+      "raw": 52707
+    }
+  },
+  {
+    "name": "@tanstack/react-table",
+    "description": "Headless, type-safe table and datagrid library for React — full control over markup and styles while the library handles sorting, filtering, pagination, and more.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/@tanstack/react-table",
+    "github": "https://github.com/TanStack/table",
+    "docs": "https://tanstack.com/table/latest",
+    "repoPath": "packages/react/tanstack-react-table",
+    "submittedBy": "claude",
+    "weeklyDownloads": 11206946,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 14978,
+      "raw": 57976
+    },
+    "githubStars": 27894,
+    "lastUpdated": "2026-04-14T14:23:20Z"
+  },
+  {
+    "name": "@tanstack/react-virtual",
+    "description": "Headless UI for virtualizing large lists and grids in React — render only what's visible to keep performance smooth regardless of dataset size.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/@tanstack/react-virtual",
+    "github": "https://github.com/TanStack/virtual",
+    "docs": "https://tanstack.com/virtual/latest",
+    "repoPath": "packages/react/tanstack-react-virtual",
+    "submittedBy": "claude",
+    "weeklyDownloads": 11767096,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 5399,
+      "raw": 17844
+    },
+    "githubStars": 6823,
+    "lastUpdated": "2026-04-14T20:29:13Z"
+  },
+  {
+    "name": "use-immer",
+    "description": "Use Immer's immutable update model as a drop-in replacement for useState and useReducer — write mutations, get immutable state.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/use-immer",
+    "github": "https://github.com/immerjs/use-immer",
+    "docs": "https://github.com/immerjs/use-immer",
+    "repoPath": "packages/react/use-immer",
+    "submittedBy": "claude",
+    "weeklyDownloads": 622742,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 326,
+      "raw": 570
+    }
+  },
+  {
+    "name": "vaul",
+    "description": "Accessible, unstyled drawer component for React — a mobile-friendly bottom sheet built on Radix Dialog.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/vaul",
+    "github": "https://github.com/emilkowalski/vaul",
+    "docs": "https://vaul.emilkowal.ski/",
+    "repoPath": "packages/react/vaul",
+    "submittedBy": "claude",
+    "weeklyDownloads": 33223544,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 18282,
+      "raw": 59393
+    }
+  },
+  {
+    "name": "@vercel/analytics",
+    "description": "Privacy-first, cookie-free web analytics for React and Next.js — no GDPR banner required.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/@vercel/analytics",
+    "github": "https://github.com/vercel/analytics",
+    "docs": "https://vercel.com/docs/analytics",
+    "repoPath": "packages/react/vercel-analytics",
+    "weeklyDownloads": 2779632,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 1571,
+      "raw": 3381
+    },
+    "githubStars": 504,
+    "lastUpdated": "2026-04-01T16:37:07Z"
+  },
+  {
+    "name": "zustand",
+    "description": "Small, fast, and scalable state management for React — bears the minimal boilerplate of Redux with none of the ceremony.",
+    "category": "react",
+    "npm": "https://www.npmjs.com/package/zustand",
+    "github": "https://github.com/pmndrs/zustand",
+    "docs": "https://zustand-demo.pmnd.rs/",
+    "repoPath": "packages/react/zustand",
+    "submittedBy": "claude",
+    "weeklyDownloads": 31150958,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 484,
+      "raw": 844
+    },
+    "githubStars": 57751,
+    "lastUpdated": "2026-04-14T13:08:26Z"
+  },
+  {
+    "name": "floating-vue",
+    "description": "Tooltip, popover, and dropdown directives for Vue 3 — powered by Floating UI with automatic placement and overflow detection.",
+    "category": "vue",
+    "npm": "https://www.npmjs.com/package/floating-vue",
+    "github": "https://github.com/Akryum/floating-vue",
+    "docs": "https://floating-vue.starpad.dev/",
+    "repoPath": "packages/vue/floating-vue",
+    "submittedBy": "claude",
+    "weeklyDownloads": 434146,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 12035,
+      "raw": 39659
+    }
+  },
+  {
+    "name": "naive-ui",
+    "description": "Fairly complete Vue 3 UI component library — 90+ components with a TypeScript-first design and no dependency on legacy CSS frameworks.",
+    "category": "vue",
+    "npm": "https://www.npmjs.com/package/naive-ui",
+    "github": "https://github.com/tusen-ai/naive-ui",
+    "docs": "https://www.naiveui.com/",
+    "repoPath": "packages/vue/naive-ui",
+    "submittedBy": "claude",
+    "weeklyDownloads": 91720,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 421682,
+      "raw": 1681847
+    },
+    "githubStars": 18242,
+    "lastUpdated": "2026-04-03T16:19:45Z"
+  },
+  {
+    "name": "pinia",
+    "description": "The intuitive, type-safe, and lightweight state management store for Vue — the official successor to Vuex.",
+    "category": "vue",
+    "npm": "https://www.npmjs.com/package/pinia",
+    "github": "https://github.com/vuejs/pinia",
+    "docs": "https://pinia.vuejs.org",
+    "repoPath": "packages/vue/pinia",
+    "submittedBy": "claude",
+    "weeklyDownloads": 3482044,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 25587,
+      "raw": 73946
+    },
+    "githubStars": 14550,
+    "lastUpdated": "2026-04-07T08:17:47Z"
+  },
+  {
+    "name": "@tanstack/vue-query",
+    "description": "Powerful async state management for Vue — data fetching, caching, background refetching, and server state synchronization.",
+    "category": "vue",
+    "npm": "https://www.npmjs.com/package/@tanstack/vue-query",
+    "github": "https://github.com/TanStack/query",
+    "docs": "https://tanstack.com/query/latest/docs/framework/vue/overview",
+    "repoPath": "packages/vue/tanstack-vue-query",
+    "submittedBy": "claude",
+    "weeklyDownloads": 478980,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 13615,
+      "raw": 47245
+    },
+    "githubStars": 49157,
+    "lastUpdated": "2026-04-16T06:32:46Z"
+  },
+  {
+    "name": "unplugin-vue-components",
+    "description": "On-demand auto-import for Vue components — eliminate all manual component imports and registrations in your Vue 3 project.",
+    "category": "vue",
+    "npm": "https://www.npmjs.com/package/unplugin-vue-components",
+    "github": "https://github.com/unplugin/unplugin-vue-components",
+    "docs": "https://github.com/unplugin/unplugin-vue-components",
+    "repoPath": "packages/vue/unplugin-vue-components",
+    "submittedBy": "claude",
+    "weeklyDownloads": 909006,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 84800,
+      "raw": 267012
+    }
+  },
+  {
+    "name": "vee-validate",
+    "description": "Template-based form validation for Vue 3 — schema validation, error messages, and field-level state with Zod/Yup integration.",
+    "category": "vue",
+    "npm": "https://www.npmjs.com/package/vee-validate",
+    "github": "https://github.com/logaretm/vee-validate",
+    "docs": "https://vee-validate.logaretm.com/v4/",
+    "repoPath": "packages/vue/vee-validate",
+    "submittedBy": "claude",
+    "weeklyDownloads": 904642,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 13032,
+      "raw": 43245
+    }
+  },
+  {
+    "name": "vue-final-modal",
+    "description": "Tiny, renderless, and stackable modal library for Vue 3 — full control over markup and transitions with proper focus trapping.",
+    "category": "vue",
+    "npm": "https://www.npmjs.com/package/vue-final-modal",
+    "github": "https://github.com/vue-final/vue-final-modal",
+    "docs": "https://vue-final-modal.org/",
+    "repoPath": "packages/vue/vue-final-modal",
+    "submittedBy": "claude",
+    "weeklyDownloads": 62426,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 7151,
+      "raw": 21718
+    }
+  },
+  {
+    "name": "vue-i18n",
+    "description": "Internationalization plugin for Vue 3 — translate messages, format dates and numbers, and switch locales at runtime.",
+    "category": "vue",
+    "npm": "https://www.npmjs.com/package/vue-i18n",
+    "github": "https://github.com/intlify/vue-i18n-next",
+    "docs": "https://vue-i18n.intlify.dev/",
+    "repoPath": "packages/vue/vue-i18n",
+    "submittedBy": "claude",
+    "weeklyDownloads": 2780177,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 19020,
+      "raw": 57054
+    }
+  },
+  {
+    "name": "vue-router",
+    "description": "The official router for Vue.js — nested routes, lazy-loading, navigation guards, and typed routes for Vue 3 apps.",
+    "category": "vue",
+    "npm": "https://www.npmjs.com/package/vue-router",
+    "github": "https://github.com/vuejs/router",
+    "docs": "https://router.vuejs.org/",
+    "repoPath": "packages/vue/vue-router",
+    "submittedBy": "claude",
+    "weeklyDownloads": 5983217,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 24870,
+      "raw": 73729
+    }
+  },
+  {
+    "name": "vue-toastification",
+    "description": "Light, easy, and beautiful toast notifications for Vue 3 — highly configurable with smooth animations and minimal setup.",
+    "category": "vue",
+    "npm": "https://www.npmjs.com/package/vue-toastification",
+    "github": "https://github.com/Maronato/vue-toastification",
+    "docs": "https://vue-toastification.maronato.dev/",
+    "repoPath": "packages/vue/vue-toastification",
+    "submittedBy": "claude",
+    "weeklyDownloads": 167643,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 6026,
+      "raw": 19075
+    }
+  },
+  {
+    "name": "@vueuse/core",
+    "description": "A collection of 200+ essential Vue Composition API utilities — from sensors and browser APIs to animations and state helpers.",
+    "category": "vue",
+    "npm": "https://www.npmjs.com/package/@vueuse/core",
+    "github": "https://github.com/vueuse/vueuse",
+    "docs": "https://vueuse.org",
+    "repoPath": "packages/vue/vueuse",
+    "submittedBy": "claude",
+    "weeklyDownloads": 6228603,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 46491,
+      "raw": 139021
+    },
+    "githubStars": 22196,
+    "lastUpdated": "2026-03-31T17:07:28Z"
+  },
+  {
+    "name": "@vueuse/motion",
+    "description": "Motion animations composables for Vue 3 — animate elements using spring physics, keyframes, and scroll-linked effects with a simple directive API.",
+    "category": "vue",
+    "npm": "https://www.npmjs.com/package/@vueuse/motion",
+    "github": "https://github.com/vueuse/motion",
+    "docs": "https://motion.vueuse.org/",
+    "repoPath": "packages/vue/vueuse-motion",
+    "submittedBy": "claude",
+    "weeklyDownloads": 103923,
+    "hasTypes": true,
+    "bundleSize": {
+      "gzip": 13981,
+      "raw": 37467
+    }
+  }
+]
