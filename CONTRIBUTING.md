@@ -39,6 +39,8 @@ A great submission answers these questions for a developer who has never heard o
 
 ## Submission Steps
 
+> **Prefer to let an AI agent do this for you?** See [.github/CONTRIBUTOR_AI_PROMPT.md](.github/CONTRIBUTOR_AI_PROMPT.md) — copy the prompt, swap in your package name, and paste it into Claude Code or your editor's agent.
+
 1. **Fork** this repository
 2. **Create a folder** at the correct path:
    ```
