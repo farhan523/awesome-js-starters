@@ -41,4 +41,4 @@ console.error(red("Error:"), "Unable to connect to the database.");
 
 ## Submitted by
 
-@awaisoem
+[@awaisoem](https://github.com/awaisoem)
