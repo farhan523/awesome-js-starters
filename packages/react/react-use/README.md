@@ -52,4 +52,4 @@ function Settings() {
 
 ## Submitted by
 
-@awaisoem
+[@awaisoem](https://github.com/awaisoem)
